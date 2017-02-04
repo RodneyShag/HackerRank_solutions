@@ -1,23 +1,25 @@
-    import java.io.*;
-    import java.util.*;
-    import java.text.*;
-    import java.math.*;
-    import java.util.regex.*;
+import java.util.Scanner;
 
-    public class Solution {
-        public static void main(String[] args) {
-            Scanner sc = new Scanner(System.in);
-            int n = sc.nextInt();            
-            String ans = "";
-            if(n % 2 == 1) {
-              ans = "Weird";
+public class Solution {
+    public static void main(String[] args) {
+        /* Read input */
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        scan.close();
+        
+        /* Determine answer */
+        String ans = "";
+        if (n % 2 == 1) {
+            ans = "Weird";
+        } else {
+            if (n >= 6 && n <= 20) {
+                ans = "Weird";
+            } else {
+                ans = "Not Weird";
             }
-            else {
-                if (n >= 6 && n <= 20)
-                    ans = "Weird";
-                else
-                    ans = "Not Weird";   
-            }
-            System.out.println(ans);
         }
+        
+        /* Print output */
+        System.out.println(ans);
     }
+}

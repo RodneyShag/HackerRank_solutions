@@ -1,6 +1,6 @@
 # HackerRank-solutions
 
-My Java solutions to HackerRank challenges
+My Java solutions to [HackerRank](https://www.hackerrank.com/) challenges
 
 ## Java
 

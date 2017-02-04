@@ -1,4 +1,3 @@
-
 public class Solution {
     public static void main(String[] args) {
         // Create a Scanner object to read input from stdin.
@@ -14,7 +13,7 @@ public class Solution {
         // Print a string literal saying "Hello, World." to stdout.
         System.out.println("Hello, World.");
       
-        // TODO: Write a line of code here that prints the contents of inputString to stdout.
+        // Prints the contents of inputString to stdout.
         System.out.println(inputString);
     }
 }

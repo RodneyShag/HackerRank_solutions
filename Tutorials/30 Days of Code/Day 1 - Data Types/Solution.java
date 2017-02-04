@@ -22,7 +22,7 @@ public class Solution {
         // Note: If you have trouble reading the entire String, please go back and review the Tutorial closely.
         myInt = scan.nextInt();
         myDouble = scan.nextDouble();
-        scan.nextLine(); // Rodney: gets rid of newline at end of line 2
+        scan.nextLine(); // gets rid of newline at end of line 2 of input
         myString = scan.nextLine();
 
         /* Print the sum of both integer variables on a new line. */
