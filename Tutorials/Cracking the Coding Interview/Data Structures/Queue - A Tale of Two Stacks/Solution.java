@@ -1,8 +1,5 @@
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.util.Scanner;
+import java.util.Stack;
 
 public class Solution {
     public static void main(String[] args) {
@@ -25,40 +22,43 @@ public class Solution {
     }
     
     public static class MyQueue<Integer> {
-        
-        Stack<Integer> stack1 = new Stack<>();
-        Stack<Integer> stack2 = new Stack<>();
+        private Stack<Integer> stack1 = new Stack<>();
+        private Stack<Integer> stack2 = new Stack<>();
         
         public void enqueue(Integer num) {
             stack1.push(num);
         }
         
         public Integer dequeue() {
-            if (size() == 0)
+            if (size() == 0) {
                 return null;
-            if (stack2.isEmpty())
+            }
+            if (stack2.isEmpty()) {
                 shiftStacks();
+            }
             return stack2.pop();
         }
         
         public Integer peek() {
-            if (size() == 0)
+            if (size() == 0) {
                 return null;
-            if (stack2.isEmpty())
+            }
+            if (stack2.isEmpty()) {
                 shiftStacks();
+            }
             return stack2.peek();
         }
         
         /* Only shifts stacks if necessary */
         private void shiftStacks() {
-            if (stack2.isEmpty()) { // shifting items while stack2 contains items would mess up our ordering
+            if (stack2.isEmpty()) { // shifting items while stack2 contains items would mess up our queue's ordering
                 while ( ! stack1.isEmpty()) {
                     stack2.push(stack1.pop());
                 }
             }
         }
         
-        public int size(){
+        public int size() {
             return stack1.size() + stack2.size();
         }
     }

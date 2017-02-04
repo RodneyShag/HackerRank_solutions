@@ -1,4 +1,4 @@
-/* Hidden stub code will pass a root argument to the function below. Complete the function to solve the challenge. Hint: you may want to write one or more helper functions.  
+/* Hidden stub code will pass a root argument to the function below. 
 
 The Node class is defined as follows:
     class Node {
@@ -11,7 +11,7 @@ The Node class is defined as follows:
         return checkBST(root, 0, 10000); // the problem stated this is the range of values.
     }
 
-    boolean checkBST(Node node, int min, int max){
+    boolean checkBST(Node node, int min, int max) {
         if (node == null)
             return true;
         if (node.data < min || node.data > max)

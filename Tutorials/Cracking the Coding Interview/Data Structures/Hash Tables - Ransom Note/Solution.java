@@ -1,22 +1,50 @@
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.util.Scanner;
+import java.util.HashMap;
 
 public class Solution {
-
+    
     public static void main(String[] args) {
+        /* Read and save input */
         Scanner in = new Scanner(System.in);
         int m = in.nextInt();
         int n = in.nextInt();
         String magazine[] = new String[m];
-        for(int magazine_i=0; magazine_i < m; magazine_i++){
+        for (int magazine_i = 0; magazine_i < m; magazine_i++) {
             magazine[magazine_i] = in.next();
         }
         String ransom[] = new String[n];
-        for(int ransom_i=0; ransom_i < n; ransom_i++){
+        for (int ransom_i = 0; ransom_i < n; ransom_i++) {
             ransom[ransom_i] = in.next();
         }
+        
+        canCreate(magazine, ransom); // attempt to create ransom letter
+    }
+    
+    /* Determines if ransom letter can be made from magazine */
+    public static void canCreate(String [] magazine, String [] ransom) {
+        HashMap<String, Integer> usableWords = makeMap(magazine);
+        
+        for (int i = 0; i < ransom.length; i++) {
+            if (usableWords.containsKey(ransom[i]) && usableWords.get(ransom[i]) > 0) {
+                usableWords.put(ransom[i], usableWords.get(ransom[i]) - 1); // uses the word
+            } else {
+                System.out.println("No");
+                return;
+            }
+        }
+        System.out.println("Yes");
+    }
+    
+    /* Makes HashMap out of an array of Strings */
+    private static HashMap<String, Integer> makeMap(String [] words) {
+        HashMap<String, Integer> map = new HashMap<>();
+        for (int i = 0; i < words.length; i++) {
+            if (map.containsKey(words[i])) {
+                map.put(words[i], map.get(words[i]) + 1);
+            } else {
+                map.put(words[i], 1);
+            }
+        }
+        return map;
     }
 }

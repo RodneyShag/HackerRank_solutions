@@ -1,34 +1,35 @@
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.util.Scanner;
+import java.util.Stack;
 
 public class Solution {
     
     public static boolean isBalanced(String expression) {
         Stack<Character> stack = new Stack<>();
-        for (int i = 0; i < expression.length(); i++){
+        for (int i = 0; i < expression.length(); i++) {
             Character ch = expression.charAt(i);
             switch (ch) {
-                case '(': 
+                case '(':
                 case '[':
-                case '{': stack.push(ch);
-                          break;
-                
-                case ')': if (stack.isEmpty() || stack.pop() != '(')
-                              return false;
-                          break;
-                
-                case ']': if (stack.isEmpty() || stack.pop() != '[')
-                              return false;
-                          break;
-                
-                case '}': if (stack.isEmpty() || stack.pop() != '{')
-                              return false;
-                          break;
-                
-                default: break;
+                case '{':
+                    stack.push(ch);
+                    break;
+                case ')':
+                    if (stack.isEmpty() || stack.pop() != '(') { // makes sure not to call .pop() on an empty stack
+                        return false;
+                    }
+                    break;
+                case ']':
+                    if (stack.isEmpty() || stack.pop() != '[') {
+                        return false;
+                    }
+                    break;
+                case '}':
+                    if (stack.isEmpty() || stack.pop() != '{') {
+                        return false;
+                    }
+                    break;
+                default:
+                    break;
             }
         }
         return stack.isEmpty();

@@ -1,8 +1,5 @@
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.util.Scanner;
+import java.util.HashMap;
 
 public class Solution {
 
@@ -11,13 +8,14 @@ public class Solution {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
-        for(int a0 = 0; a0 < n; a0++){
+        for(int a0 = 0; a0 < n; a0++) {
             String op = in.next();
             String contact = in.next();
-            if (op.equals("add"))
+            if (op.equals("add")) {
                 add(contact);
-            else if (op.equals("find"))
+            } else if (op.equals("find")) {
                 System.out.println(find(contact));
+            }
         }
     }
     
@@ -30,7 +28,7 @@ public class Solution {
                 curr.addChild(ch);
             }
             curr = curr.children.get(ch);
-            curr.wordsFromHere++; // each time we visit a node (while adding letters), we increment this.
+            curr.size++; // each time we visit a node (while adding letters), we increment this.
         }
     }
     
@@ -42,19 +40,18 @@ public class Solution {
             Character ch = str.charAt(i);
             if ( ! curr.children.containsKey(ch)) {
                 return 0;
-            }
-            else {
+            } else {
                 curr = curr.children.get(ch);
             }
         }
         
-        return curr.wordsFromHere;
+        return curr.size;
     }
     
-    /* This implementation is somewhat based off the lecture video in this problem */
+    /* This implementation is somewhat based off the tutorial video in this problem */
     public static class TrieNode {
         public HashMap<Character, TrieNode> children = new HashMap<>();
-        public int wordsFromHere = 0; // this was the main trick to decrease runtime to pass tests.
+        public int size = 0; // this was the main trick to decrease runtime to pass tests.
         
         public void addChild(Character ch) {
             children.put(ch, new TrieNode());

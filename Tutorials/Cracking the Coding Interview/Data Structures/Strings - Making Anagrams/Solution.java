@@ -1,10 +1,7 @@
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.util.Scanner;
+
 public class Solution {
-    private static final int numLetters = 26;
+    private static final int NUM_LETTERS = 26; // we assume lower-case letters only
     
     public static int numberNeeded(String first, String second) {
         /* For each string, create an array of the count of each character */
@@ -13,15 +10,16 @@ public class Solution {
         
         /* Count number of deletions we need to make the Strings anagrams of each other */
         int deletions = 0;
-        for (int i = 0; i < numLetters; i++){
+        for (int i = 0; i < NUM_LETTERS; i++) {
             deletions += Math.abs(array1[i] - array2[i]);
         }
         return deletions;
     }
 
-    private static int [] createFilledArray(String str){
-        int [] array = new int [numLetters];
-        for (int i = 0; i < str.length(); i++){
+    /* Creates an array with the count of each character */
+    private static int [] createFilledArray(String str) {
+        int [] array = new int[NUM_LETTERS];
+        for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
             array[ch - 'a']++;
         }
