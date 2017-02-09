@@ -6,17 +6,18 @@ public class Solution {
     private static TrieNode root = new TrieNode();
     
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
         for(int a0 = 0; a0 < n; a0++) {
-            String op = in.next();
-            String contact = in.next();
+            String op = scan.next();
+            String contact = scan.next();
             if (op.equals("add")) {
                 add(contact);
             } else if (op.equals("find")) {
                 System.out.println(find(contact));
             }
         }
+        scan.close();
     }
     
     private static void add(String str) {

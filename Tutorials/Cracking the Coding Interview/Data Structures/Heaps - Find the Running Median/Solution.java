@@ -14,12 +14,15 @@ public class Solution {
     private static PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder()); // keeps track of the SMALL numbers
     
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
+        /* Read input */
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
         int[] a = new int[n];
-        for(int a_i=0; a_i < n; a_i++) {
-            a[a_i] = in.nextInt();
+        for (int a_i=0; a_i < n; a_i++) {
+            a[a_i] = scan.nextInt();
         }
+        scan.close();
+
         medianTracker(a);
     }
     

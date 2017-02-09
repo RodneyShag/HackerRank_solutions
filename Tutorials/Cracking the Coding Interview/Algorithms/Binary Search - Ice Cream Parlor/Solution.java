@@ -25,17 +25,18 @@ public class Solution {
     }
     
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int t = in.nextInt();
+        Scanner scan = new Scanner(System.in);
+        int t = scan.nextInt();
         for(int a0 = 0; a0 < t; a0++){
-            int m = in.nextInt();
-            int n = in.nextInt();
+            int m = scan.nextInt();
+            int n = scan.nextInt();
             int a[] = new int[n];
             for(int a_i=0; a_i < n; a_i++) {
-                a[a_i] = in.nextInt();
+                a[a_i] = scan.nextInt();
             }
             
             buyIceCream(a, m);
         }
+        scan.close();
     }
 }

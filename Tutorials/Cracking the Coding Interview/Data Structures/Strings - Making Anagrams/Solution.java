@@ -27,9 +27,12 @@ public class Solution {
     }
     
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        String a = in.next();
-        String b = in.next();
+        /* Read input */
+        Scanner scan = new Scanner(System.in);
+        String a = scan.next();
+        String b = scan.next();
+        scan.close();
+
         System.out.println(numberNeeded(a, b));
     }
 }

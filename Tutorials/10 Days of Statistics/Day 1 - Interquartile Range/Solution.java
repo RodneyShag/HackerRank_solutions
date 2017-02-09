@@ -18,6 +18,7 @@ public class Solution {
             frequency[i] = scan.nextInt();
             numElements += frequency[i];
         }
+        scan.close();
         
         /* Create and sort our data set */
         int [] data = new int[numElements];
