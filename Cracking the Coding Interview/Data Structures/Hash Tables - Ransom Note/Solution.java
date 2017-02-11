@@ -18,7 +18,12 @@ public class Solution {
         }
         scan.close();
         
-        canCreate(magazine, ransom); // attempt to create ransom letter
+        /* Attempt to create a ransom letter */
+        if (magazine.length < ransom.length) {
+            System.out.println("No");
+        } else {
+            canCreate(magazine, ransom);
+        }
     }
     
     /* Determines if ransom letter can be made from magazine */

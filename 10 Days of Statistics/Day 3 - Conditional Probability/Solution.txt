@@ -1,0 +1,29 @@
+Answer: 1/3
+
+****** 2 valid answers: 1/3 or 1/2
+
+Reference: https://en.wikipedia.org/wiki/Boy_or_Girl_paradox
+
+This question is known as the "Boy or Girl Paradox". The actual answer is either 1/3 or 1/2 depending on how the question is interpreted. Here are 2 ways to interpret the question:
+
+1) From all families with two children, at least one of whom is a boy, a family is chosen at random. This would yield the answer of 1/3.
+2) From all families with two children, one child is selected at random, and the sex of that child is specified to be a boy. This would yield an answer of 1/2.
+
+
+******* Interpretation (1) gives an answer of 1/3
+
+There are 4 possible scenarios: (B, B), (B, G), (G, B), (G, G)
+
+We know that 1 child is a boy, so now we have 3 scenarios: (B, B), (B, G), (G, B)
+
+When asked, "what is the probability that both children are boys", the only scenario that matches this is: (B, B). That is, only 1 of the 3 scenarios satisfies the critera, so there is a 1/3 chance that both children are boys.
+
+
+******* Interpretation (2) gives an answer of 1/2
+
+In this scenario, a child was selected at random from a set of all children that have exactly 1 sibling. Knowing the fact that the child is a boy does not give us any information on whether his sibling is a boy or a girl. 
+
+
+******* HackerRank's correct answer
+
+The accepted answer on HackerRank is 1/3. This aligns with the fact that the problem wording more closely resembles Interpretation (1).

@@ -1,0 +1,7 @@
+Answer: 1/9
+
+There are 6 possibilities on each die. On 2 dice, there are 6 * 6 = 36 possibilities
+
+There are 4 cases that match the desired criteria: (1,5) (5,1) (2,4) (4,2)
+
+This gives us a probability of 4/36 = 1/9
