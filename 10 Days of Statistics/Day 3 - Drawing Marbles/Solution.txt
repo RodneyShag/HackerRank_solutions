@@ -1,3 +1,8 @@
+    Author: Rodney Shaghoulian
+    Github: github.com/rshaghoulian
+HackerRank: hackerrank.com/rshaghoulian
+
+
 Answer: 2/3
 
 After drawing the first marble, we are left with 2 red marbles and 4 blue marbles. Now we calculate the probability of drawing a blue marble as :

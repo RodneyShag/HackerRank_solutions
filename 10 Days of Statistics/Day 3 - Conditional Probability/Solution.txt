@@ -1,3 +1,8 @@
+    Author: Rodney Shaghoulian
+    Github: github.com/rshaghoulian
+HackerRank: hackerrank.com/rshaghoulian
+
+
 Answer: 1/3
 
 ****** 2 valid answers: 1/3 or 1/2

@@ -1,3 +1,7 @@
+//     Author: Rodney Shaghoulian
+//     Github: github.com/rshaghoulian
+// HackerRank: hackerrank.com/rshaghoulian
+
 import java.util.Scanner;
 
 public class Solution {
@@ -8,8 +12,7 @@ public class Solution {
         String s = scan.nextLine();
         scan.close();
         
-        /* Must trim String to pass test cases. Still unclear why it's necessary */
-        s = s.trim();
+        s = s.trim(); // needed to pass test cases
         
         /* Check special cases */
         if (s.length() == 0) {

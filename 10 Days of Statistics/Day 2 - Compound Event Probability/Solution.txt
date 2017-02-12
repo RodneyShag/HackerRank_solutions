@@ -1,3 +1,8 @@
+    Author: Rodney Shaghoulian
+    Github: github.com/rshaghoulian
+HackerRank: hackerrank.com/rshaghoulian
+
+
 Answer: 17/42
 
 Urn X has a 4/7 probability of giving a red ball

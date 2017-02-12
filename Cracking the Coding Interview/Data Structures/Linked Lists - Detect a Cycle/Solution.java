@@ -1,3 +1,7 @@
+//     Author: Rodney Shaghoulian
+//     Github: github.com/rshaghoulian
+// HackerRank: hackerrank.com/rshaghoulian
+
 /*
 Detect a cycle in a linked list. Note that the head pointer may be 'null' if the list is empty.
 

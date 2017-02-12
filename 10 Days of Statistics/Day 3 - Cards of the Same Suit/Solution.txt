@@ -1,3 +1,8 @@
+    Author: Rodney Shaghoulian
+    Github: github.com/rshaghoulian
+HackerRank: hackerrank.com/rshaghoulian
+
+
 Answer: 12/51
 
 There are 13 of each suit in a deck.

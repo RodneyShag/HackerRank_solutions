@@ -1,3 +1,7 @@
+//     Author: Rodney Shaghoulian
+//     Github: github.com/rshaghoulian
+// HackerRank: hackerrank.com/rshaghoulian
+
 import java.util.*;
 
 class Checker implements Comparator<Player> {

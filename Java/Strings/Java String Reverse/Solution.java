@@ -1,3 +1,7 @@
+//     Author: Rodney Shaghoulian
+//     Github: github.com/rshaghoulian
+// HackerRank: hackerrank.com/rshaghoulian
+
 import java.util.Scanner;
 
 /* If a String is equivalent to itself when reversed, it's a palindrome */

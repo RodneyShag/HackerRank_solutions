@@ -1,3 +1,7 @@
+//     Author: Rodney Shaghoulian
+//     Github: github.com/rshaghoulian
+// HackerRank: hackerrank.com/rshaghoulian
+
 import java.util.Scanner;
 import java.text.NumberFormat;
 import java.util.Locale;

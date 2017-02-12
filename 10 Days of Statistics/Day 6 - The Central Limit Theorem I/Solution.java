@@ -1,3 +1,7 @@
+//     Author: Rodney Shaghoulian
+//     Github: github.com/rshaghoulian
+// HackerRank: hackerrank.com/rshaghoulian
+
 /* This HackerRank problem has a buggy tutorial (formula is incorrect) and a buggy
    solution (uses the incorrect formula) Hopefully they fix this issue soon.    */
 public class Solution {
