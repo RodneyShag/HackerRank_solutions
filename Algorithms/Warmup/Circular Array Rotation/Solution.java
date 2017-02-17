@@ -3,34 +3,35 @@
 // HackerRank: hackerrank.com/rshaghoulian
 
 import java.util.Scanner;
+import java.util.Arrays;
 
 /*           Runtime: O(n)     
     Space Complexity: O(1) by doing an "in place" rotation
 */
 public class Solution {
-
     public static void main(String[] args) {
-        /* Read and save input */
+        /* Read input and create array */
         Scanner scan = new Scanner(System.in);
-        int size         = scan.nextInt();
-        int numRotations = scan.nextInt();
-        int array[] = new int[size];
-        for(int i = 0; i < size; i++) {
+        int n = scan.nextInt();
+        int k = scan.nextInt();
+        int q = scan.nextInt();
+        int [] array = new int[n];
+        for (int i = 0; i < n; i++) {
             array[i] = scan.nextInt();
         }
-        scan.close();
         
         /* Rotate array (in place) using 3 reverse operations */
-        numRotations %= size; // to account for numRotations > size
-        int rotationSpot = size - 1 - numRotations;
-        reverse(array, 0, size - 1);
-        reverse(array, 0, rotationSpot);
-        reverse(array, rotationSpot + 1, size - 1);
+        k = k % n; // to account for cases where k > n
+        reverse(array, 0, array.length - 1);
+        reverse(array, 0, k - 1);
+        reverse(array, k, array.length - 1);
         
-        /* Print rotated array */
-        for (int i = 0; i < size; i++) {
-            System.out.print(array[i] + " ");
+        /* Print output */
+        for (int i = 0; i < q; i++) {
+            int m = scan.nextInt();
+            System.out.println(array[m]);
         }
+        scan.close();
     }
     
     /* Reverses array from "start" to "end" inclusive */
@@ -45,11 +46,10 @@ public class Solution {
             swap(array, start + offset, end - offset);
         }
     }
-    
-    private static void swap(int [] array, int i, int j) {
+
+    private static void swap (int [] array, int i, int j) {
         int temp = array[i];
         array[i] = array[j];
         array[j] = temp;
     }
 }
-

@@ -2,8 +2,6 @@
 //     Github: github.com/rshaghoulian
 // HackerRank: hackerrank.com/rshaghoulian
 
-/* This HackerRank problem has a buggy tutorial (formula is incorrect) and a buggy
-   solution (uses the incorrect formula) Hopefully they fix this issue soon.    */
 public class Solution {
 
     public static void main(String[] args) {
@@ -12,13 +10,9 @@ public class Solution {
         double maxWeight = 9800;
         int    n         = 49;
         
-        double samplesMean = mean * n;
-        
-        /* this INCORRECT formula (based off HackerRank tutorial) passes HackerRank tests */
-        double samplesSTD  = std * Math.sqrt(n); 
-        
-        /* this is the correct formula (which currently wont pass HackerRank tests) */
-        // double samplesSTD = std / Math.sqrt(n); 
+        /* Formulas are from problem's tutorial */
+        double samplesMean = n * mean;
+        double samplesSTD  = Math.sqrt(n) * std;
         
         System.out.format("%.4f", cumulative(samplesMean, samplesSTD, maxWeight));
     }

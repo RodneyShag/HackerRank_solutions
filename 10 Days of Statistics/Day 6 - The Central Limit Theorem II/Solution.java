@@ -10,14 +10,10 @@ public class Solution {
         double mean        = 2.4;
         double std         = 2;
 
-        double samplesMean = mean * n;
+        /* Formulas are from problem's tutorial */
+        double samplesMean = n * mean;
+        double samplesSTD  = Math.sqrt(n) * std;
 
-        /* this INCORRECT formula (based off HackerRank tutorial) passes HackerRank tests */
-        double samplesSTD  = std * Math.sqrt(n); 
-        
-        /* this is the correct formula (which currently wont pass HackerRank tests) */
-        // double samplesSTD = std / Math.sqrt(n); 
-        
         System.out.format("%.4f", cumulative(samplesMean, samplesSTD, ticketsLeft));
     }
     
