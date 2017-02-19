@@ -6,7 +6,7 @@ import java.util.Scanner;
 import java.util.Stack;
 import java.util.HashMap;
 
-public class Solution {
+class Solution {
     
     public static void main(String[] args) {
         /* Create HashMap to match opening brackets with closing brackets */
@@ -17,10 +17,9 @@ public class Solution {
         
         /* Test each expression for validity */
         Scanner scan = new Scanner(System.in);
-        int t = scan.nextInt();
-        while (t-- > 0) {
+        while (scan.hasNext()) {
             String expression = scan.next();
-            System.out.println(isBalanced(expression, map) ? "YES" : "NO" );
+            System.out.println(isBalanced(expression, map) ? "true" : "false" );
         }
         scan.close();
     }
