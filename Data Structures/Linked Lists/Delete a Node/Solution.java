@@ -10,9 +10,7 @@
      int data;
      Node next;
   }
-*/
-    // This is a "method-only" submission. 
-    // You only need to complete this method. 
+*/ 
 
 Node Delete(Node head, int position) {
     if (head == null) {

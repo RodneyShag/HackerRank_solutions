@@ -5,14 +5,13 @@
 import java.util.Scanner;
 
 public class Solution {
-
     public static void main(String[] args) {
         /* Read input */
         Scanner scan = new Scanner(System.in);
         String s = scan.nextLine();
         scan.close();
         
-        s = s.trim(); // needed to pass test cases
+        s = s.trim(); // so that .split() works properly
         
         /* Check special cases */
         if (s.length() == 0) {

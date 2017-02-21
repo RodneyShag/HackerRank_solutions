@@ -5,8 +5,8 @@
 import java.io.IOException;
 import java.lang.reflect.Method;
 
-class Printer<T> {
-    void printArray(T[] array) {
+class Printer {
+    public <T> void printArray(T[] array) {
         for (T item : array) {
             System.out.println(item);
         }
