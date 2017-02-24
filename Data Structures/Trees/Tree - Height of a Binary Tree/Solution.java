@@ -4,6 +4,7 @@
 
 import java.util.*;
 import java.io.*;
+
 class Node {
     Node left;
     Node right;
@@ -11,7 +12,7 @@ class Node {
     
     Node(int data) {
         this.data = data;
-        left = null;
+        left  = null;
         right = null;
     }
 }
@@ -34,16 +35,15 @@ class Solution {
     }
 
     public static Node insert(Node root, int data) {
-        if(root == null){
+        if (root == null) {
             return new Node(data);
         }
         else {
             Node cur;
-            if(data <= root.data){
+            if (data <= root.data) {
                 cur = insert(root.left, data);
                 root.left = cur;
-            }
-            else{
+            } else {
                 cur = insert(root.right, data);
                 root.right = cur;
             }
@@ -54,7 +54,7 @@ class Solution {
         Scanner scan = new Scanner(System.in);
         int t = scan.nextInt();
         Node root = null;
-        while(t-- > 0){
+        while (t-- > 0) {
             int data = scan.nextInt();
             root = insert(root, data);
         }

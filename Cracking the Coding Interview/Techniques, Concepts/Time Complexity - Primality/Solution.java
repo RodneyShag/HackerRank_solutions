@@ -20,7 +20,8 @@ public class Solution {
         if (n < 2) {
             return false;
         }
-        for (int i = 2; i <= (int) Math.sqrt(n); i++) {
+        int sqrt = (int) Math.sqrt(n);
+        for (int i = 2; i <= sqrt; i++) {
             if (n % i == 0) {
                 return false;
             }

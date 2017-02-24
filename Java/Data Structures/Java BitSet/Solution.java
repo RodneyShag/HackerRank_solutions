@@ -57,6 +57,6 @@ public class Solution {
             }
             System.out.println(B1.cardinality() + " " + B2.cardinality());
         }
+        scan.close();
     }
 }
-

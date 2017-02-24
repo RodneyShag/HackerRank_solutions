@@ -5,7 +5,6 @@
 import java.util.Scanner;
 
 public class Solution {
-
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int T = scan.nextInt();
@@ -16,7 +15,7 @@ public class Solution {
         scan.close();
     }
 
-    /* For efficient appending, use a StringBuilder instead of a String */
+    /* For efficient appending, use a StringBuffer instead of a String */
     public static void printEvensOdds(String str) {
         StringBuffer evens = new StringBuffer();
         StringBuffer odds  = new StringBuffer();
