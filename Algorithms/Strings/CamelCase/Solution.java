@@ -5,15 +5,22 @@
 import java.util.Scanner;
 
 public class Solution {
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String str = scan.next();
         scan.close();
-        try {
-            int num = Integer.parseInt(str);
-            System.out.println(num);
-        } catch (NumberFormatException e) {
-            System.out.println("Bad String");
+        System.out.println(numWords(str));
+    }
+    
+    private static int numWords(String str) {
+        int count = 1;
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if (ch >= 'A' && ch <= 'Z') {
+                count++;
+            }
         }
+        return count;
     }
 }

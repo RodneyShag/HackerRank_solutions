@@ -7,13 +7,14 @@ import java.util.Scanner;
 public class Solution {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        String str = scan.next();
-        scan.close();
-        try {
-            int num = Integer.parseInt(str);
-            System.out.println(num);
-        } catch (NumberFormatException e) {
-            System.out.println("Bad String");
+        int V = scan.nextInt();
+        int n = scan.nextInt();
+        for (int i = 0; i < n; i++) {
+            if (scan.nextInt() == V) {
+                System.out.println(i);
+                break;
+            }
         }
+        scan.close();
     }
 }

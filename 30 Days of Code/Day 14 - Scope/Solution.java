@@ -16,16 +16,12 @@ class Difference {
         this.elements = elements;
     }
 
-    // O(n) runtime. O(1) space
+    //          Runtime: O(n)
+    // Space Complexity: O(1)
     void computeDifference() {
-        maximumDifference = 0;
-        int min = elements[0];
-        int max = elements[0];
-        for (int num : elements) {
-            min = Math.min(min, num);
-            max = Math.max(max, num);
-        }
-        maximumDifference = max - min;
+        int max = Arrays.stream(elements).max().getAsInt();
+        int min = Arrays.stream(elements).min().getAsInt();     
+        maximumDifference = max - min ;
     }
 } // End of Difference class
 

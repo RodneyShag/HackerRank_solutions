@@ -53,20 +53,15 @@ class Student extends Person {
         
         if  (average >= 90) {
             return 'O';
-        }
-        else if (average >= 80) {
+        } else if (average >= 80) {
             return 'E';
-        }
-        else if (average >= 70) {
+        } else if (average >= 70) {
             return 'A';
-        }
-        else if (average >= 55) {
+        } else if (average >= 55) {
             return 'P';
-        }
-        else if (average >= 40) {
+        } else if (average >= 40) {
             return 'D';
-        }
-        else {
+        } else {
             return 'T';
         }
     }
