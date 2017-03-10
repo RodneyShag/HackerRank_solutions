@@ -1,0 +1,10 @@
+    Author: Rodney Shaghoulian
+    Github: github.com/rshaghoulian
+HackerRank: hackerrank.com/rshaghoulian
+
+
+Answer: Stack
+
+- A Queue is FIFO = First In First Out
+- A Stack is LIFO =  Last In First Out
+- An array or vector aren't exactly applicable here.

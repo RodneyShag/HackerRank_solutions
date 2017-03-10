@@ -1,0 +1,11 @@
+    Author: Rodney Shaghoulian
+    Github: github.com/rshaghoulian
+HackerRank: hackerrank.com/rshaghoulian
+
+
+Answer: Segment Tree
+
+By "updates" they mean inserting/deleting an element in the data structure.
+By "queries" they mean searching for a specific element.
+
+Notice that a segment tree (assuming it's balanced) will have height = log n. Whether we do an insert, delete, or query, we start from the root and decide to go left or right at each node/level in the tree. We have to make (log n) of these decisions since that is the height of the segment tree.

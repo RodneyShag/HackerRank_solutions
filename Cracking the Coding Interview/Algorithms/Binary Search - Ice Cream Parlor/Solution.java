@@ -5,9 +5,24 @@
 import java.util.Scanner;
 import java.util.HashMap;
 
-/* Runtime: O(n) using HashMap */
+// Runtime: O(n) using HashMap
 public class Solution {
 
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int t = scan.nextInt();
+        while (t-- > 0) {
+            int m = scan.nextInt();
+            int n = scan.nextInt();
+            int costs [] = new int[n];
+            for (int i = 0; i < n; i++) {
+                costs[i] = scan.nextInt();
+            }
+            buyIceCream(costs, m);
+        }
+        scan.close();
+    }
+    
     public static void buyIceCream(int [] costs, int money) {
         HashMap<Integer, Integer> map = new HashMap<>(); // key = cost, value = ice cream ID
 
@@ -26,21 +41,5 @@ public class Solution {
                 map.put(cost, icecreamID);
             }
         }
-    }
-    
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int t = scan.nextInt();
-        for(int a0 = 0; a0 < t; a0++){
-            int m = scan.nextInt();
-            int n = scan.nextInt();
-            int a[] = new int[n];
-            for(int a_i=0; a_i < n; a_i++) {
-                a[a_i] = scan.nextInt();
-            }
-            
-            buyIceCream(a, m);
-        }
-        scan.close();
     }
 }
