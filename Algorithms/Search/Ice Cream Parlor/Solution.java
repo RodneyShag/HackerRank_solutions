@@ -5,7 +5,8 @@
 import java.util.Scanner;
 import java.util.HashMap;
 
-// Runtime: O(n) using HashMap
+//  Time Complexity: O(n)
+// Space Complexity: O(n)
 public class Solution {
 
     public static void main(String[] args) {
@@ -36,10 +37,7 @@ public class Solution {
                 System.out.println(map.get(otherCost) + " " + icecreamID);
             }
             
-            /* Update HashMap */
-            if ( ! map.containsKey(cost)) {
-                map.put(cost, icecreamID);
-            }
+            map.putIfAbsent(cost, icecreamID); // update HashMap
         }
     }
 }

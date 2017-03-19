@@ -12,13 +12,13 @@ public class Solution {
         Scanner scan = new Scanner(System.in);
         int m = scan.nextInt();
         int n = scan.nextInt();
-        String magazine[] = new String[m];
-        for (int magazine_i = 0; magazine_i < m; magazine_i++) {
-            magazine[magazine_i] = scan.next();
+        String [] magazine = new String[m];
+        for (int i = 0; i < m; i++) {
+            magazine[i] = scan.next();
         }
         String ransom[] = new String[n];
-        for (int ransom_i = 0; ransom_i < n; ransom_i++) {
-            ransom[ransom_i] = scan.next();
+        for (int i = 0; i < n; i++) {
+            ransom[i] = scan.next();
         }
         scan.close();
         
@@ -36,7 +36,7 @@ public class Solution {
         
         for (int i = 0; i < ransom.length; i++) {
             if (usableWords.containsKey(ransom[i]) && usableWords.get(ransom[i]) > 0) {
-                usableWords.put(ransom[i], usableWords.get(ransom[i]) - 1); // uses the word
+                usableWords.merge(ransom[i], -1, Integer::sum); // uses the word
             } else {
                 System.out.println("No");
                 return;
@@ -49,12 +49,9 @@ public class Solution {
     private static HashMap<String, Integer> makeMap(String [] words) {
         HashMap<String, Integer> map = new HashMap<>();
         for (int i = 0; i < words.length; i++) {
-            if (map.containsKey(words[i])) {
-                map.put(words[i], map.get(words[i]) + 1);
-            } else {
-                map.put(words[i], 1);
-            }
+            map.merge(words[i], 1, Integer::sum);
         }
         return map;
     }
 }
+

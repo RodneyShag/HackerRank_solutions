@@ -5,11 +5,19 @@
 import java.util.Scanner;
 import java.util.HashSet;
 
-// We are given an increasing input sequence, so no duplicate values exist
+/*
 
-//  Time Complexity: O(n)
-// Space Complexity: O(n)
+We are given an increasing input sequence, so no duplicate values exist.
 
+For each element in the sequence that we traverse, we save it in a HashSet. Let's call this element "k". 
+Our HashSet needs to have 3 elements, which we'll call i, j, k, that create a "beautiful triplet" as explained in the problem statement. 
+When we come across element "k", we check to see if our HashSet also has elements "i" and "j". 
+This is done by noting that we need to have a[i] + 2*d == a[j] + d == a[k] to have a beautiful triplet.
+
+Time  Complexity: O(n)
+Space Complexity: O(n)
+
+*/
 public class Solution {
     public static void main(String[] args) {
         /* Initialize variables */

@@ -20,11 +20,7 @@ public class Solution {
         /* Fill HashMap with 1st String */
         for (int i = 0; i < a.length(); i++) {
             char ch = a.charAt(i);
-            if (map.containsKey(ch)) {
-                map.put(ch, map.get(ch) + 1);
-            } else {
-                map.put(ch, 1);
-            }
+            map.merge(ch, 1, Integer::sum);
         }
         
         /* Compare 2nd String to 1st String's HashMap */

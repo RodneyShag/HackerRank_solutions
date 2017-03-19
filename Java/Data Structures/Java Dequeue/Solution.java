@@ -7,8 +7,8 @@ import java.util.Deque;
 import java.util.ArrayDeque;
 import java.util.HashMap;
 
-// O(n) runtime
-// O(n) space complexity
+//  Time Complexity: O(n)
+// Space Complexity: O(n)
 public class test {
     public static void main(String[] args) {
         HashMap<Integer, Integer> map = new HashMap<>();
@@ -26,17 +26,14 @@ public class test {
                 if (map.get(old) == 1) {
                     map.remove(old);
                 } else {
-                    map.put(old, map.get(old) - 1);
+                    map.merge(old, -1, Integer::sum);
                 }
             }
+            
             /* Add new value */
             int num = scan.nextInt();
             deque.add(num);
-            if (map.containsKey(num)) {
-                map.put(num, map.get(num) + 1);
-            } else {
-                map.put(num, 1);
-            }
+            map.merge(num, 1, Integer::sum);
             
             max = Math.max(max, map.size());
         }
