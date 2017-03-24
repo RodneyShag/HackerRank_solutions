@@ -13,13 +13,12 @@ public class Solution {
         for (int i = 0; i < s; i++) {
             array[i] = scan.nextInt(); 
         }
+        scan.close();
         quickSort(array);
     }
     
     public static void quickSort(int [] array) {
-        if (array != null) {
-            quickSort(array, 0, array.length - 1);
-        }
+        quickSort(array, 0, array.length - 1);
     }
     
     private static void quickSort(int [] array, int start, int end) {
@@ -67,11 +66,9 @@ public class Solution {
     }
     
     private static void printArray(int[] array, int start, int end) {
-        if (start < end) {
-            for (int i = start; i <= end; i++) {
-                System.out.print(array[i] + " ");
-            }
-            System.out.println();
+        for (int i = start; i <= end; i++) {
+            System.out.print(array[i] + " ");
         }
+        System.out.println();
     }
 }

@@ -5,7 +5,17 @@
 import java.util.Scanner;
 
 public class Solution {
-
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int s = scan.nextInt();
+        int[] array = new int[s];
+        for (int i = 0; i < s; i++) {
+            array[i] = scan.nextInt(); 
+        }
+        scan.close();
+        insertionSort(array);
+    }
+    
     /* Task: Find bug in HackerRank's insertionSort function below */
     public static void insertionSort(int[] A) {
         for (int i = 1; i < A.length; i++) {
@@ -20,16 +30,6 @@ public class Solution {
         printArray(A);
     }
 
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int s = scan.nextInt();
-        int[] array = new int[s];
-        for (int i = 0; i < s; i++) {
-            array[i] = scan.nextInt(); 
-        }
-        insertionSort(array);
-    }
-    
     private static void printArray(int[] array) {
         for (int num: array) {
             System.out.print(num + " ");

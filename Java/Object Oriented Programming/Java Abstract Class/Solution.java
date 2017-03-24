@@ -13,11 +13,12 @@ abstract class Book {
 }
 
 class MyBook extends Book {
+    @Override
     void setTitle(String s) {
         title = s;
     }
 }
-
+    
 public class Main {
     public static void main(String []args) {
         //Book new_novel=new Book(); This line prHMain.java:25: error: Book is abstract; cannot be instantiated

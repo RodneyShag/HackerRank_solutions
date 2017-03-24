@@ -12,6 +12,7 @@ public class Solution {
         for (int i = 0; i < s; i++) {
             array[i] = scan.nextInt(); 
         }
+        scan.close();
         quickSort(array);
     }
     
@@ -52,11 +53,9 @@ public class Solution {
     }
     
     private static void printArray(int[] array, int start, int end) {
-        if (start < end) {
-            for (int i = start; i <= end; i++) {
-                System.out.print(array[i] + " ");
-            }
-            System.out.println();
+        for (int i = start; i <= end; i++) {
+            System.out.print(array[i] + " ");
         }
+        System.out.println();
     }
 }

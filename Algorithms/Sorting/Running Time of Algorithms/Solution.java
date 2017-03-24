@@ -5,8 +5,18 @@
 import java.util.Scanner;
 
 public class Solution {
-
-    public static void insertionSortShiftCounter(int[] array) {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int s = scan.nextInt();
+        int[] array = new int[s];
+        for (int i = 0; i < s; i++) {
+            array[i] = scan.nextInt(); 
+        }
+        scan.close();
+        insertionSortShifts(array);
+    }
+    
+    public static void insertionSortShifts(int[] array) {
         int shifts = 0;
         for (int i = 1; i < array.length; i++) {
             int j = i;
@@ -19,15 +29,5 @@ public class Solution {
             array[j] = value;
         }
         System.out.println(shifts);
-    }
-    
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int s = scan.nextInt();
-        int[] array = new int[s];
-        for (int i = 0; i < s; i++) {
-            array[i] = scan.nextInt(); 
-        }
-        insertionSortShiftCounter(array);
     }
 }

@@ -5,7 +5,17 @@
 import java.util.Scanner;
 
 public class Solution {
-
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int s = scan.nextInt();
+        int[] array = new int[s];
+        for (int i = 0; i < s; i++) {
+            array[i] = scan.nextInt();
+        }
+        scan.close();
+        insertionSortPart2(array);
+    }
+    
     public static void insertionSortPart2(int[] array) {
         for (int i = 1; i < array.length; i++) {
             int j = i;
@@ -17,17 +27,7 @@ public class Solution {
             array[j] = value;
             printArray(array);
         }
-    }
-    
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int s = scan.nextInt();
-        int[] array = new int[s];
-        for (int i = 0; i < s; i++) {
-            array[i] = scan.nextInt(); 
-        }
-        insertionSortPart2(array);
-    }
+    }  
     
     private static void printArray(int[] array) {
         for (int num: array) {

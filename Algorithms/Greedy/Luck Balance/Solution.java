@@ -1,0 +1,100 @@
+//     Author: Rodney Shaghoulian
+//     Github: github.com/rshaghoulian
+// HackerRank: hackerrank.com/rshaghoulian
+
+import java.util.Scanner;
+import java.util.ArrayList;
+
+// Algorithm: Lose every non-important contest to save luck. For important contests, lose the K contests with the most luck, and win the rest. This greedy algorithm maximizes saved luck.
+
+//  Time Complexity: O(n) average-case runtime using Quickselect
+// Space Complexity: O(n)
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int N = scan.nextInt();
+        int K = scan.nextInt();
+        ArrayList<Integer> contest = new ArrayList<>(N);
+        int savedLuck = 0;
+        for (int i = 0; i < N; i++) {
+            int luck = scan.nextInt();
+            int importance = scan.nextInt();
+            if (importance == 0) {
+                savedLuck += luck; // lose every non-important contest
+            } else {
+                contest.add(luck);
+            }
+        }
+        scan.close();
+        
+        /* Compete in "important" contests */
+        quickselect(contest, 0, contest.size() - 1, contest.size() - K);
+        for (int i = 0; i < contest.size(); i++) {
+            if (i < contest.size() - K) {
+                savedLuck -= contest.get(i); // win contest
+            } else {
+                savedLuck += contest.get(i); // lose contest
+            }
+        }
+        System.out.println(savedLuck);
+    }
+    
+    /* Quickselect 
+     *  - Finds "nth" smallest element in a list. Returns its value (Code from Wikipedia)
+     *  - Also partially sorts the data. If the value of the nth smallest element is x, all values to the
+     *    left of it are smaller than x, and all values to the right of it are greater than x
+     *  - O(n) average run-time is since we recurse only on 1 side (n + n/2 + n/4 + ...) = n (1 + 1/2 + 1/4 + ...) = O(n)
+     *    Our formula above is a geometric series with "r = 1/2", which would converge to 1/(1-r) for infinite geometric series
+     *  - O(n^2) worst-case run-time is if we consistently pick a bad pivot
+     */
+    private static Integer quickselect(ArrayList<Integer> list, int start, int end, int n) {
+        if (n < 0 || n >= list.size() || start < 0 || start >= list.size() || end < 0 || end >= list.size()) {
+            return null;
+        }
+        
+        if (start == end) { // a 1-element list is our base case
+            return list.get(start);
+        }
+        int pivotIndex = partition(list, start, end);
+        
+        /* Recurse on only 1 side, until found */
+        if (n == pivotIndex) {
+            return list.get(pivotIndex);
+        } else if (n < pivotIndex) {
+            return quickselect(list, start, pivotIndex - 1, n);
+        } else {
+            return quickselect(list, pivotIndex + 1, end, n);
+        }
+    }
+    
+    /* Partitions list into 2 parts. 
+     *      1) Left side has values smaller than pivotValue
+     *      2) Right side has values larger than pivotValue
+     * Returns pivotIndex
+     */
+    public static int partition(ArrayList<Integer> list, int start, int end) {
+        int pivotIndex = (start + end) / 2; // there are many ways to choose a pivot
+        int pivotValue = list.get(pivotIndex);
+        
+        swap(list, pivotIndex, end); // puts pivot at end for now.
+        
+        /* Linear search, comparing all elements to pivotValue and swapping as necessary */
+        int indexToReturn = start;  // Notice we set it to "start", not to "0".
+        for (int i = start; i < end; i++) {
+            if (list.get(i) < pivotValue) {
+                swap(list, i, indexToReturn);
+                indexToReturn++;
+            }
+        }
+        
+        swap(list, indexToReturn, end); // puts pivot where it belongs
+        return indexToReturn;
+    }
+    
+    private static void swap(ArrayList<Integer> list, int i, int j) {
+        int temp = list.get(i);
+        list.set(i, list.get(j));
+        list.set(j, temp);
+    }
+}

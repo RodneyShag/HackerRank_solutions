@@ -5,6 +5,17 @@
 import java.util.Scanner;
 
 public class Solution {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int s = scan.nextInt();
+        int[] array = new int[s];
+        for (int i = 0; i < s; i++) {
+            array[i] = scan.nextInt(); 
+        }
+        scan.close();
+        partition(array);
+        printArray(array);
+    }
     
     /* Partitions array into 2 parts. 
      *      1) Left side has values smaller than pivotValue
@@ -30,18 +41,7 @@ public class Solution {
         return indexToReturn;
     }
     
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int s = scan.nextInt();
-        int[] array = new int[s];
-        for (int i = 0; i < s; i++) {
-            array[i] = scan.nextInt(); 
-        }
-        partition(array);
-        printArray(array);
-    }
-    
-    private static void swap (int [] array, int i, int j) {
+    private static void swap(int [] array, int i, int j) {
         int temp = array[i];
         array[i] = array[j];
         array[j] = temp;

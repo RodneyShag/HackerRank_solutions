@@ -176,17 +176,17 @@ public class Solution {
             HashSet<Integer> uNeighbors = map.get(u);
             if (uNeighbors == null) {                
                 uNeighbors = new HashSet<>();
+                map.put(u, uNeighbors);
             }
             uNeighbors.add(v);
-            map.put(u, uNeighbors);
             
             /* Edges are undirected: Add 2nd direction */
             HashSet<Integer> vNeighbors = map.get(v);
             if (vNeighbors == null) {
                 vNeighbors = new HashSet<>();
+                map.put(v, vNeighbors);
             }
             vNeighbors.add(u);
-            map.put(v, vNeighbors);
         }
         scan.close();
         
