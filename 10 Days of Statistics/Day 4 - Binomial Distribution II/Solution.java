@@ -3,7 +3,6 @@
 // HackerRank: hackerrank.com/rshaghoulian
 
 public class Solution {
-
     public static void main(String[] args) {
         /* Values given in problem statement */
         double p = 0.12;
@@ -35,7 +34,7 @@ public class Solution {
         return factorial(n) / (factorial(x) * factorial(n - x));
     }
     
-    private static Long factorial (int n) {
+    private static Long factorial(int n) {
         if (n < 0) {
             return null;
         }

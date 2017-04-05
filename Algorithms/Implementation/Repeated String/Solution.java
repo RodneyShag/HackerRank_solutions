@@ -19,15 +19,18 @@ public class Solution {
                 wordAs++;
             }
         }
+
         long completeWords    = n / str.length();
-        long remainingLetters =  n % str.length();
-        long totalAs = completeWords * wordAs;
+        long remainingLetters = n % str.length();
+        long totalAs          = completeWords * wordAs;
         
+        /* Count up the remaining 'a' characters */
         for (int i = 0; i < remainingLetters; i++) {
             if (str.charAt(i) == 'a') {
                 totalAs++;
             }
         }
+        
         System.out.println(totalAs);
     }
 }

@@ -4,7 +4,7 @@
 
 /*
   Merge two linked lists 
-  head pointer input could be NULL as well for empty list
+
   Node is defined as 
   class Node {
      int data;
@@ -12,7 +12,7 @@
   }
 */
 
-//          Runtime: O(n)
+//  Time Complexity: O(n)
 // Space Complexity: O(1)
 Node MergeLists(Node currA, Node currB) {
     if (currA == null) {

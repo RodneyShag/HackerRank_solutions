@@ -5,7 +5,6 @@
 import java.util.Scanner;
 
 public class Solution {
-
     public static void main(String[] args) {
         /* Hardcoded data */
         int [] x = {95, 85, 80, 70, 60};

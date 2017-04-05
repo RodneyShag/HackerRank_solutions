@@ -5,16 +5,16 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-// Runtime:          O(n)
-// Space Complexity: O(n)
+//  Time Complexity: O(a + n)
+// Space Complexity: O(a)
 public class Solution {
     
     private static final int size = 100;
     
-    public static void main(String[] args) {
+    public static void main(String [] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
-        int [] counts = new int[size + 1];
+        int [] counts = new int[size + 1]; // could alternatively use a HashMap
         for (int i = 0; i < n; i++) {
             counts[scan.nextInt()]++;
         }

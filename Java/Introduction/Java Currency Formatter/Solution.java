@@ -7,15 +7,13 @@ import java.text.NumberFormat;
 import java.util.Locale;
 
 public class Solution {
-    
     public static void main(String[] args) {
-        /* Read input */
-        Scanner scanner = new Scanner(System.in);
+        /* Save input */
+        Scanner scan = new Scanner(System.in);
         double payment = scanner.nextDouble();
-        scanner.close();
+        scan.close();
 
-        /* Create custom Locale for India. 
-          I used the "IANA Language Subtag Registry" to find India's country code */
+        /* Create custom Locale for India - I used the "IANA Language Subtag Registry" to find India's country code */
         Locale indiaLocale = new Locale("en", "IN");
 
         /* Create NumberFormats using Locales */

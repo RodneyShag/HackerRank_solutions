@@ -6,15 +6,14 @@ import java.io.*;
 import java.util.*;
 
 public class Solution {
-    /* Runtime: O(n) using a HashMap */
+    //  Time Complexity: O(n) using a HashMap
+    // Space Complexity: O(n)
     static boolean isAnagram(String a, String b) {
         if (a == null || b == null || a.length() != b.length()) {
             return false;
         }
-        
         a = a.toLowerCase();
         b = b.toLowerCase();
-        
         HashMap<Character, Integer> map = new HashMap<>();
         
         /* Fill HashMap with 1st String */

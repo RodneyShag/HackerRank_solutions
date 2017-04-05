@@ -5,10 +5,11 @@
 import java.util.Scanner;
 
 public class Solution {
-    public static void main(String[] args) {
-        /* Read and save input */
+    public static void main(String [] args) {
+        /* Save input */
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
+        scan.close();
         
         /* Print staircase */
         for (int spaces = n - 1; spaces >= 0; spaces--) {

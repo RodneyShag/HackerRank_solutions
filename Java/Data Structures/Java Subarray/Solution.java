@@ -4,12 +4,15 @@
 
 import java.util.Scanner;
 
-public class Solution {
+// Our subarray must be contiguous, so we have O(n^2) contiguous subarrays
 
+//  Time Complexity: O(n^2)
+// Space Complexity: O(1)
+public class Solution {
     public static void main(String[] args) {
-        /* Read and save input */
+        /* Save input */
         Scanner scan = new Scanner(System.in);
-        int size = scan.nextInt();
+        int size     = scan.nextInt();
         int [] array = new int[size];        
         for (int i = 0; i < size; i++) {
             array[i] = scan.nextInt();
@@ -19,7 +22,6 @@ public class Solution {
         System.out.println(negativeSubarrays(array));
     }
     
-    /* O(n^2) runtime */
     private static int negativeSubarrays(int [] array) {
         int count = 0;
         int sum   = 0;

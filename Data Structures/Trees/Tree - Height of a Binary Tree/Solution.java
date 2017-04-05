@@ -8,7 +8,7 @@ import java.io.*;
 class Node {
     Node left;
     Node right;
-    int data;
+    int  data;
     
     Node(int data) {
         this.data = data;
@@ -18,13 +18,6 @@ class Node {
 }
 
 class Solution {
-    /*
-    class Node 
-        int data;
-        Node left;
-        Node right;
-    */
-
     /* We define a 1-Node tree to have height of 0 */
     static int height(Node root) {
         if (root == null) {
@@ -37,8 +30,7 @@ class Solution {
     public static Node insert(Node root, int data) {
         if (root == null) {
             return new Node(data);
-        }
-        else {
+        } else {
             Node cur;
             if (data <= root.data) {
                 cur = insert(root.left, data);
@@ -50,7 +42,7 @@ class Solution {
             return root;
         }
     }
-    public static void main(String[] args) {
+    public static void main(String [] args) {
         Scanner scan = new Scanner(System.in);
         int t = scan.nextInt();
         Node root = null;

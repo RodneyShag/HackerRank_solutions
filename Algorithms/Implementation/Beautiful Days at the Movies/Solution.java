@@ -5,12 +5,13 @@
 import java.util.Scanner;
 
 public class Solution {
-    public static void main(String[] args) {
+    public static void main(String [] args) {
         Scanner scan = new Scanner(System.in);
         int i = scan.nextInt();
         int j = scan.nextInt();
         int k = scan.nextInt();
         scan.close();
+
         int count = 0;
         for (int num = i; num <= j; num++) {
             if (Math.abs(num - reverse(num)) % k == 0) {

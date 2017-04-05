@@ -16,7 +16,7 @@ public class Solution {
             list.add(value);
         }
         
-        /* Perfrom queries on Linked List */
+        /* Perform queries on Linked List */
         int Q = scan.nextInt();
         for (int i = 0; i < Q; i++) {
             String action = scan.next();

@@ -5,29 +5,28 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-/*           Runtime: O(n)     
-    Space Complexity: O(1) by doing an "in place" rotation
-*/
+//  Time Complexity: O(n)
+// Space Complexity: O(1) by doing an "in place" rotation
 public class Solution {
     public static void main(String[] args) {
-        /* Read input and create array */
+        /* Save input */
         Scanner scan = new Scanner(System.in);
-        int n = scan.nextInt();
-        int k = scan.nextInt();
-        int q = scan.nextInt();
-        int [] array = new int[n];
-        for (int i = 0; i < n; i++) {
+        int size     = scan.nextInt();
+        int k        = scan.nextInt();
+        int q        = scan.nextInt();
+        int [] array = new int[size];
+        for (int i = 0; i < size; i++) {
             array[i] = scan.nextInt();
         }
         
         /* Rotate array (in place) using 3 reverse operations */
-        k = k % n; // to account for cases where k > n
+        k %= size; // to account for k > size
         reverse(array, 0, array.length - 1);
         reverse(array, 0, k - 1);
         reverse(array, k, array.length - 1);
         
         /* Print output */
-        for (int i = 0; i < q; i++) {
+        while (q-- > 0) {
             int m = scan.nextInt();
             System.out.println(array[m]);
         }
@@ -46,8 +45,8 @@ public class Solution {
             swap(array, start + offset, end - offset);
         }
     }
-
-    private static void swap (int [] array, int i, int j) {
+    
+    private static void swap(int [] array, int i, int j) {
         int temp = array[i];
         array[i] = array[j];
         array[j] = temp;

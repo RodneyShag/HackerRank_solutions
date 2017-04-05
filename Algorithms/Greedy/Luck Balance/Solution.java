@@ -5,13 +5,14 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 
-// Algorithm: Lose every non-important contest to save luck. For important contests, lose the K contests with the most luck, and win the rest. This greedy algorithm maximizes saved luck.
+// Algorithm: Lose every non-important contest to save luck. For important contests, lose the
+// K contests with the most luck, and win the rest. This greedy algorithm maximizes saved luck.
 
 //  Time Complexity: O(n) average-case runtime using Quickselect
 // Space Complexity: O(n)
 
 public class Solution {
-    public static void main(String[] args) {
+    public static void main(String [] args) {
         Scanner scan = new Scanner(System.in);
         int N = scan.nextInt();
         int K = scan.nextInt();

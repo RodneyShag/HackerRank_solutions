@@ -6,9 +6,8 @@ import java.util.Scanner;
 import java.util.Arrays;
 
 public class Solution {
-
     public static void main(String[] args) {
-        /* Read and save input */
+        /* Save input */
         Scanner scan = new Scanner(System.in);
         int size = scan.nextInt();
         int [] element = new int[size];
@@ -16,7 +15,6 @@ public class Solution {
         for (int i = 0; i < size; i++) {
             element[i] = scan.nextInt();
         }
-        
         int numElements = 0;
         for (int i = 0; i < size; i++) {
             frequency[i] = scan.nextInt();
@@ -35,14 +33,13 @@ public class Solution {
         }
         Arrays.sort(data);
         
-        /* Works with both even and odd length arrays */
+        /* Calculate interquartile range */
         double q1 = findMedian(data, 0, data.length / 2 - 1);
         double q3 = findMedian(data, (data.length + 1) / 2, data.length - 1);
-        
         System.out.println(q3 - q1);
     }
     
-    /* Treats elements from "start" to "end" as an array and calculates its median */
+    /* Treats elements from "start" to "end" (inclusive) as an array and calculates its median */
     private static double findMedian(int [] array, int start, int end) {
         if ((end - start) % 2 == 0) { // odd number of elements
             return (array[(end + start) / 2]);

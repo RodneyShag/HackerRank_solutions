@@ -3,12 +3,10 @@
 // HackerRank: hackerrank.com/rshaghoulian
 
 public class Solution {
-
     public static void main(String[] args) {
-        double ratio = 1.09;
-        
-        double p = ratio / (1 + ratio);
-        int    n = 6;
+        double ratio = 1.09; // hardcoded value
+        double p     = ratio / (1 + ratio);
+        int    n     = 6;
         
         /* Calculate result */
         double result = 0;
@@ -32,7 +30,7 @@ public class Solution {
         return factorial(n) / (factorial(x) * factorial(n - x));
     }
     
-    private static Long factorial (int n) {
+    private static Long factorial(int n) {
         if (n < 0) {
             return null;
         }

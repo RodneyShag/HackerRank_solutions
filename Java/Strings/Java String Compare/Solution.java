@@ -5,9 +5,8 @@
 import java.util.Scanner;
 
 public class Solution {
-
     public static void main(String[] args) {
-        /* Read input */
+        /* Save input */
         Scanner scan = new Scanner(System.in);
         String s = scan.nextLine();
         int k    = scan.nextInt();

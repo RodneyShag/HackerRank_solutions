@@ -5,8 +5,8 @@
 import java.util.Scanner;
 
 public class Solution {
-    public static void main(String[] args) {
-        /* Read and save input */
+    public static void main(String [] args) {
+        /* Save input */
         Scanner scan = new Scanner(System.in);
         int size = scan.nextInt();
         int [] array = new int[size];

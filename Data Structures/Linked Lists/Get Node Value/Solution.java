@@ -12,7 +12,7 @@
   }
 */
 
-//          Runtime: O(n)
+//  Time Complexity: O(n)
 // Space Complexity: O(1)
 int GetNode(Node head, int k) {
     Node curr   = head;
@@ -25,7 +25,7 @@ int GetNode(Node head, int k) {
     
     /* Move both pointers */
     while (runner.next != null) {
-        curr = curr.next;
+        curr   = curr.next;
         runner = runner.next;
     }
     

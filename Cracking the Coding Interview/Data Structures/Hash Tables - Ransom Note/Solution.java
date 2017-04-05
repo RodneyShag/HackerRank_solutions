@@ -6,9 +6,8 @@ import java.util.Scanner;
 import java.util.HashMap;
 
 public class Solution {
-    
     public static void main(String[] args) {
-        /* Read and save input */
+        /* Save input */
         Scanner scan = new Scanner(System.in);
         int m = scan.nextInt();
         int n = scan.nextInt();
@@ -16,7 +15,7 @@ public class Solution {
         for (int i = 0; i < m; i++) {
             magazine[i] = scan.next();
         }
-        String ransom[] = new String[n];
+        String [] ransom = new String[n];
         for (int i = 0; i < n; i++) {
             ransom[i] = scan.next();
         }
@@ -33,7 +32,6 @@ public class Solution {
     /* Determines if ransom letter can be made from magazine */
     public static void canCreate(String [] magazine, String [] ransom) {
         HashMap<String, Integer> usableWords = makeMap(magazine);
-        
         for (int i = 0; i < ransom.length; i++) {
             if (usableWords.containsKey(ransom[i]) && usableWords.get(ransom[i]) > 0) {
                 usableWords.merge(ransom[i], -1, Integer::sum); // uses the word
@@ -45,7 +43,7 @@ public class Solution {
         System.out.println("Yes");
     }
     
-    /* Makes HashMap out of an array of Strings */
+    /* Creates and returns a HashMap out of an array of Strings */
     private static HashMap<String, Integer> makeMap(String [] words) {
         HashMap<String, Integer> map = new HashMap<>();
         for (int i = 0; i < words.length; i++) {
@@ -54,4 +52,3 @@ public class Solution {
         return map;
     }
 }
-

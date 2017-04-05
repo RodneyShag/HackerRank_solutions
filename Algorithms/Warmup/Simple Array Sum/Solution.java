@@ -12,6 +12,7 @@ public class Solution {
         for (int i = 0; i < size; i++) {
             sum += scan.nextInt();
         }
+        scan.close();
         System.out.println(sum);
     }
 }

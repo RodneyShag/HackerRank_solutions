@@ -6,60 +6,56 @@ import java.util.Scanner;
 import java.util.HashMap;
 
 public class Solution {
-
+    
     private static TrieNode root = new TrieNode();
     
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
-        for(int a0 = 0; a0 < n; a0++) {
-            String op = scan.next();
-            String contact = scan.next();
-            if (op.equals("add")) {
+        for (int i = 0; i < n; i++) {
+            String operation = scan.next();
+            String contact   = scan.next();
+            if (operation.equals("add")) {
                 add(contact);
-            } else if (op.equals("find")) {
+            } else if (operation.equals("find")) {
                 System.out.println(find(contact));
             }
         }
         scan.close();
     }
-    
+
     private static void add(String str) {
         TrieNode curr = root;
         for (int i = 0; i < str.length(); i++) {
             Character ch = str.charAt(i);
-            
-            if ( ! curr.children.containsKey(ch)) {
-                curr.addChild(ch);
-            }
+            curr.addChildIfAbsent(ch);
             curr = curr.children.get(ch);
-            curr.size++; // each time we visit a node (while adding letters), we increment this.
+            curr.size++;
         }
     }
-    
-    private static int find(String str) {
+
+    private static int find(String prefix) {
         TrieNode curr = root;
         
         /* Traverse down tree to end of our prefix */
-        for (int i = 0; i < str.length(); i++) {
-            Character ch = str.charAt(i);
-            if ( ! curr.children.containsKey(ch)) {
+        for (int i = 0; i < prefix.length(); i++) {
+            Character ch = prefix.charAt(i);
+            if (!curr.children.containsKey(ch)) {
                 return 0;
             } else {
                 curr = curr.children.get(ch);
             }
         }
-        
         return curr.size;
     }
     
     /* This implementation is somewhat based off the tutorial video in this problem */
-    public static class TrieNode {
+    public static class TrieNode { // must be a nested class since it's "static"
         public HashMap<Character, TrieNode> children = new HashMap<>();
         public int size = 0; // this was the main trick to decrease runtime to pass tests.
         
-        public void addChild(Character ch) {
-            children.put(ch, new TrieNode());
+        public void addChildIfAbsent(Character ch) {
+            children.putIfAbsent(ch, new TrieNode());
         }
     }
 }

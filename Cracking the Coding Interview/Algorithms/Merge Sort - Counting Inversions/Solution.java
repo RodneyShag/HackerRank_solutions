@@ -5,14 +5,27 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-/* We basically implement MergeSort and 
-    1) Add "swaps" counter and 1 line of code to count swaps when merging
-    2) Use "long" instead of "int" to avoid integer overflow
+// We basically implement MergeSort and 
+//  1) Add "swaps" counter and 1 line of code to count swaps when merging
+//  2) Use "long" instead of "int" to avoid integer overflow
     
-    Runtime: O(n log n)
-    Space Complexity: O(n)
-*/
+//  Time Complexity: O(n log n)
+// Space Complexity: O(n)
 public class Solution {
+    public static void main(String [] args) {
+        Scanner scan = new Scanner(System.in);
+        int testcases = scan.nextInt();
+        while (testcases-- > 0) {
+            int n = scan.nextInt();
+            int [] array = new int[n];
+            for (int i = 0; i < n; i++) {
+                array[i] = scan.nextInt();
+            }
+            MergeSort ms = new MergeSort();
+            System.out.println(ms.mergeSort(arr));
+        }
+        scan.close();
+    }
 
     private static class MergeSort {
         /* Our array has up to n = 100,000 elements. That means there may be O(n^2) swaps. 
@@ -36,7 +49,6 @@ public class Solution {
         }
 
         private void merge(int [] array, int [] helper, int start, int mid, int end) { 
-
             /* Fill helper array with same elements as original array */
             for (int i = start; i <= end; i++) { // notice "i" goes from "start" to "end", not "0" to "array.length"
                 helper[i] = array[i];
@@ -63,21 +75,5 @@ public class Solution {
                 array[curr++] = helper[left++];
             }
         }
-    }
-    
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int t = scan.nextInt();
-        for (int a0 = 0; a0 < t; a0++) {
-            int n = scan.nextInt();
-            int arr[] = new int[n];
-            for (int arr_i=0; arr_i < n; arr_i++) {
-                arr[arr_i] = scan.nextInt();
-            }
-            
-            MergeSort ms = new MergeSort();
-            System.out.println(ms.mergeSort(arr));
-        }
-        scan.close();
     }
 }

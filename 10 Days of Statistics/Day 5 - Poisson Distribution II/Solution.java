@@ -9,9 +9,8 @@ import java.util.Scanner;
     https://www.hackerrank.com/challenges/s10-poisson-distribution-2/forum/comments/176962
 */
 public class Solution {
-
     public static void main(String[] args) {
-        /* Read and save input */
+        /* Save input */
         Scanner scan = new Scanner(System.in);
         double A = scan.nextDouble();
         double B = scan.nextDouble();

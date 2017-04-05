@@ -6,7 +6,7 @@ import java.io.*;
 import java.util.*;
 
 class Node {
-    Node left,right;
+    Node left, right;
     int data;
     Node(int data) {
         this.data = data;
@@ -16,18 +16,18 @@ class Node {
 
 class Solution {
     static void levelOrder(Node root){
-        Queue<Node> queue = new LinkedList<>();
+        ArrayDeque<Node> deque = new ArrayDeque<>(); // use deque as a queue
         if (root != null) {
-            queue.add(root);
+            deque.add(root);
         }
-        while ( ! queue.isEmpty()) {
-            Node n = queue.remove();
+        while (!deque.isEmpty()) {
+            Node n = deque.remove();
             System.out.print(n.data + " ");
             if (n.left != null) {
-                queue.add(n.left);
+                deque.add(n.left);
             }
             if (n.right != null) {
-                queue.add(n.right);
+                deque.add(n.right);
             }
         }
     }

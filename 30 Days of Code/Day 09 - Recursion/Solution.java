@@ -5,12 +5,11 @@
 import java.util.Scanner;
 
 public class Solution {
-
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
-        System.out.println(factorial(n));
         scan.close();
+        System.out.println(factorial(n));
     }
     
     private static Long factorial (int n) {

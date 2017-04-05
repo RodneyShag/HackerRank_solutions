@@ -6,14 +6,14 @@ import java.util.Scanner;
 import java.util.Arrays;
 import java.util.Comparator;
 
-/* O(n log n) runtime. O(n) space
- *
- * The challenging part is creating the rank arrays.
- */
-public class Solution {
+// The challenging part is creating the rank arrays
 
+//  Time Complexity: O(n log n)
+// Space Complexity: O(n)
+
+public class Solution {
     public static void main(String[] args) {
-        /* Read and save input */
+        /* Save input */
         Scanner scan = new Scanner(System.in);
         int size = scan.nextInt();
         double [] X = new double[size];
@@ -24,6 +24,7 @@ public class Solution {
         for (int i = 0; i < size; i++) {
             Y[i] = scan.nextDouble();
         }
+        scan.close();
         
         System.out.format("%.3f", spearman(X, Y));
     }
@@ -49,7 +50,7 @@ public class Solution {
         return 1 - numerator / (n * ((n * n) - 1));
     }
     
-    /* Returns a new array with ranks. Assumes unique array values. */
+    /* Returns a new (parallel) array of ranks. Assumes unique array values */
     public static int[] getRanks(double [] array) {
         int n = array.length;
         
@@ -68,29 +69,23 @@ public class Solution {
         }
         return ranks;
     }
-    
-    /* A class to store 2 variables */
-    public static class Pair {
-        public final int index;
-        public final double value;
- 
-        public Pair(int i, double v) {
-            index = i;
-            value = v;
-        }
-    }
+}
 
-    /* This lets us sort Pairs based on their value field */
-    public static class PairValueComparator implements Comparator<Pair> {
-        @Override
-        public int compare(Pair p1, Pair p2) {
-            if (p1.value < p2.value) {
-                return -1;
-            } else if (p1.value > p2.value) {
-                return 1;
-            } else {
-                return 0;
-            }
-        }
+/* A class to store 2 variables */
+class Pair {
+    public final int    index;
+    public final double value;
+
+    public Pair(int i, double v) {
+        index = i;
+        value = v;
+    }
+}
+
+/* This lets us sort Pairs based on their value field */
+class PairValueComparator implements Comparator<Pair> {
+    @Override
+    public int compare(Pair p1, Pair p2) {
+        return Double.compare(p1.value, p2.value);
     }
 }

@@ -5,14 +5,14 @@
 import java.util.Scanner;
 
 public class Solution {
-    
-    public static void main(String[] args) {
+    public static void main(String [] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
         while (n-- > 0) {
             int grade = scan.nextInt();
             System.out.println(roundGrade(grade));
         }
+        scan.close();
     }
     
     private static int roundGrade(int grade) {

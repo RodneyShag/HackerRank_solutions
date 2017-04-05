@@ -4,12 +4,10 @@
 
 import java.util.Scanner;
 
-class Solution{
-    public static void main(String []args) {
-
+class Solution {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int t = scan.nextInt();
-
         for (int i = 0; i < t; i++) {
             try {
                 long x = scan.nextLong();
@@ -26,8 +24,8 @@ class Solution{
                 if (x >= Long.MIN_VALUE && x <= Long.MAX_VALUE) {
                     System.out.println("* long");
                 }
-            } catch(Exception e) {
-                System.out.println(scan.next() +" can't be fitted anywhere.");
+            } catch (Exception e) {
+                System.out.println(scan.next() + " can't be fitted anywhere.");
             }
         }
         scan.close();

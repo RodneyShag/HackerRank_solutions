@@ -38,6 +38,8 @@ public class Solution {
             }
             System.out.println(result);
         }
+        
+        scan.close();
     }
     
     /* Multiplies 2 matrices in O(n^3) time */

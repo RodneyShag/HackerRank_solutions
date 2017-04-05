@@ -8,23 +8,21 @@ public class Solution {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int T = scan.nextInt();
-        for (int testCase = 0; testCase < T; testCase++) {
+        while (T-- > 0) {
             int n = scan.nextInt();
             int m = scan.nextInt();
-            
-            /* Create array of values */
             int [] array = new int[n];
             for (int i = 0; i < n; i++) {
                 array[i] = scan.nextInt();
             }
-            
-            System.out.println(solvable(array, m, 0) ? "YES" : "NO");
+            System.out.println(isSolvable(array, m, 0) ? "YES" : "NO");
         }
+        scan.close();
     }
     
     /* Basically a depth-first search (DFS). 
        Marks each array value as 1 when visiting (Side-effect: alters array) */
-    private static boolean solvable(int [] array, int m, int i) {
+    private static boolean isSolvable(int [] array, int m, int i) {
         /* Base Cases */
         if (i < 0 || array[i] == 1) {
             return false;
@@ -35,8 +33,8 @@ public class Solution {
         array[i] = 1; // marks as visited
 
         /* Recursive Cases */
-        return solvable(array, m, i - 1) || 
-               solvable(array, m, i + 1) || 
-               solvable(array, m, i + m);
+        return isSolvable(array, m, i - 1) || 
+               isSolvable(array, m, i + 1) || 
+               isSolvable(array, m, i + m);
     }
 }

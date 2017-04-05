@@ -4,12 +4,11 @@
 
 import java.util.Scanner;
 
-//          Runtime: O(n)
+//  Time Complexity: O(n)
 // Space Complexity: O(1) by doing an "in place" rotation
 public class Solution {
-
-    public static void main(String[] args) {
-        /* Read and save input */
+    public static void main(String [] args) {
+        /* Save input */
         Scanner scan = new Scanner(System.in);
         int size         = scan.nextInt();
         int numRotations = scan.nextInt();

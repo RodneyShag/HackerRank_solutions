@@ -7,21 +7,21 @@ import java.util.HashMap;
 
 class Solution {
     public static void main(String [] args) {
-        /* Read input and save as entries in a HashMap */
+        /* Save input as entries in a HashMap */
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
         HashMap<String, Integer> map = new HashMap<>();
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             String name = scan.next();
             int phone   = scan.nextInt();
             map.put(name, phone);
         }
         
         /* Read each query and check if its in our HashMap */
-        while(scan.hasNext()) {
-            String s = scan.next();
-            if (map.containsKey(s)) {
-                System.out.println(s + "=" + map.get(s));
+        while (scan.hasNext()) {
+            String str = scan.next();
+            if (map.containsKey(str)) {
+                System.out.println(str + "=" + map.get(str));
             } else {
                 System.out.println("Not found");
             }

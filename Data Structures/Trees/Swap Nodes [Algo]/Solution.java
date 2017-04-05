@@ -4,8 +4,10 @@
 
 import java.util.Scanner;
 
+// Main trick: Repesent our tree as a 1-D array
+
 public class Solution {
-    public static void main(String[] args) {
+    public static void main(String [] args) {
         /* Create tree */
         Scanner scan = new Scanner(System.in);
         int N = scan.nextInt();
@@ -16,7 +18,7 @@ public class Solution {
 
         /* Perform swaps and print inorder traversals */
         int T = scan.nextInt();
-        for (int i = 1; i <= T; i++) {
+        while (T-- > 0) {
             int K = scan.nextInt();
             swap(array, K, N);
             inorderTraverse(array, 1);
@@ -31,16 +33,16 @@ public class Solution {
         }
     }
     
-    private static void swap(Pair [] array, int depth, int currIndex, int currDepth) {
+    private static void swap(Pair [] array, int depthToSwap, int currIndex, int currDepth) {
         if (currIndex < 1) {
             return;
         }
         Pair p = array[currIndex];
-        if (currDepth == depth) {
+        if (currDepth == depthToSwap) {
             p.swapSubtrees();
         } else {
-            swap(array, depth, p.left,  currDepth + 1);
-            swap(array, depth, p.right, currDepth + 1);
+            swap(array, depthToSwap, p.left,  currDepth + 1);
+            swap(array, depthToSwap, p.right, currDepth + 1);
         }
     }
     

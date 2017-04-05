@@ -16,8 +16,8 @@ public class test {
         
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
-        int m = scan.nextInt();        
-        int max = map.size();
+        int m = scan.nextInt();
+        int max = 0;
         
         for (int i = 0; i < n; i++) {
             /* Remove old value (if necessary) */

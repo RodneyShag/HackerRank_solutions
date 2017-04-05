@@ -4,16 +4,12 @@
 
 import java.util.Scanner;
 import java.util.HashSet;
-import java.util.Queue;
-import java.util.LinkedList;
+import java.util.ArrayDeque;
 
-/* Creates a graph and uses breadth-first search (BFS) to find minimum spanning tree (MST) */
 public class Solution {
-
     private static final int EDGE_WEIGHT = 6;
     
     public static void main(String[] args) {
-        
         Scanner scan = new Scanner(System.in);
         int numQueries = scan.nextInt();
         
@@ -22,7 +18,7 @@ public class Solution {
             int numEdges = scan.nextInt();
             
             /* Create Nodes */
-            Node [] node = new Node[numNodes + 1]; // make array 1 bigger than number of Nodes so Node 1 is at index 1
+            Node [] node = new Node[numNodes + 1]; // node "i" will be at index "i"
             node[0] = null;
             for (int i = 1; i <= numNodes; i++) {
                 node[i] = new Node(i);
@@ -37,7 +33,7 @@ public class Solution {
             
             /* Create MST */
             int start = scan.nextInt();
-            createMST(node[start]);
+            findDistances(node[start]);
 
             /* Print results */
             for (int i = 1; i <= numNodes; i++) {
@@ -50,23 +46,21 @@ public class Solution {
         scan.close();
     }
     
-    /* Use BFS to create minimum spanning tree */
-    private static void createMST(Node start) {
-        if (start == null)
+    /* Uses BFS to find minimum distance of each Node from "start".
+       Can use BFS instead of Dijkstra's Algorithm since edges are equally weighted. */
+    private static void findDistances(Node start) {
+        if (start == null) {
             return;
-        
-        Queue<Node> queue = new LinkedList<Node>();
-        
+        }
+        ArrayDeque<Node> deque = new ArrayDeque<>(); // use deque as a queue
         start.distance = 0;
-        queue.add(start);
-        
-        while ( ! queue.isEmpty()) {
-            Node curr = queue.remove();
-
+        deque.add(start);
+        while (!deque.isEmpty()) {
+            Node curr = deque.remove();
             for (Node neighbor : curr.neighbors) {
                 if (neighbor.distance == -1) { // meaning it's unvisited
                     neighbor.distance = curr.distance + EDGE_WEIGHT;
-                    queue.add(neighbor);
+                    deque.add(neighbor);
                 }
             }
         }
@@ -74,8 +68,8 @@ public class Solution {
     
     /* Implementation of an UNDIRECTED graph */
     public static class Node {
-        public final int     id;
-        public int           distance; // this can also tell us if Node has been visited
+        public final int     id; // each Node will have a unique ID
+        public int           distance; // Also tells us if Node has been visited (-1 means unvisited)
         public HashSet<Node> neighbors;
         
         public Node (int id) {
@@ -87,6 +81,22 @@ public class Solution {
         public void addNeighbor(Node neighbor) {
             neighbors.add(neighbor);
             neighbor.neighbors.add(this);
+        }
+
+        @Override
+        public boolean equals(Object other) {
+            if (other == this) {
+                return true;
+            } else if (other == null || !(other instanceof Node)) {
+                return false;
+            }
+            Node otherNode = (Node) other;
+            return this.id == otherNode.id;
+        }
+
+        @Override
+        public int hashCode() {
+            return id; // simple and effective
         }
     }
 }

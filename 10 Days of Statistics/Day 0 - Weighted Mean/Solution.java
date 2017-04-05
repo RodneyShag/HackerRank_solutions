@@ -5,10 +5,8 @@
 import java.util.Scanner;
 
 public class Solution {
-
     public static void main(String[] args) {
-
-        /* Read and save data */
+        /* Save input */
         Scanner scan = new Scanner(System.in);
         int size = scan.nextInt();
         int [] elements = new int[size];
@@ -28,7 +26,6 @@ public class Solution {
             total += elements[i] * weights[i];
             totalWeights += weights[i];
         }
-        
         double weightedMean = (double) total / totalWeights;
         System.out.format("%.1f", weightedMean);
     }

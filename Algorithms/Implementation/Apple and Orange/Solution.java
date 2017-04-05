@@ -4,12 +4,11 @@
 
 import java.util.Scanner;
 
-//          Runtime: O(m + n)
+//  Time Complexity: O(m + n)
 // Space Complexity: O(1)
 public class Solution {
-
-    public static void main(String[] args) {
-        /* Read and save input */
+    public static void main(String [] args) {
+        /* Save input */
         Scanner scan = new Scanner(System.in);
         int s = scan.nextInt();
         int t = scan.nextInt();

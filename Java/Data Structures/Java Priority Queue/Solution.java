@@ -6,13 +6,13 @@ import java.util.Scanner;
 import java.util.PriorityQueue;
 import java.util.Comparator;
 
-class Student{
+class Student {
     private String fname;
     private double cgpa;
     private int token;
     public Student(String fname, double cgpa, int token) {
         this.fname = fname;
-        this.cgpa = cgpa;
+        this.cgpa  = cgpa;
         this.token = token;
     }
     public int getToken() {
@@ -55,7 +55,7 @@ public class Solution {
         if (pq.isEmpty()) {
             System.out.println("EMPTY");
         } else {
-            while ( ! pq.isEmpty()) {
+            while (!pq.isEmpty()) {
                 Student s = pq.remove();
                 System.out.println(s.getFname());
             }

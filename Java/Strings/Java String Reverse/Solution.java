@@ -6,7 +6,6 @@ import java.util.Scanner;
 
 /* If a String is equivalent to itself when reversed, it's a palindrome */
 public class Solution {
-
     public static void main(String[] args) {
         /* Read input */
         Scanner scan = new Scanner(System.in);

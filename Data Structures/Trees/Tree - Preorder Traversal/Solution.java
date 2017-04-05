@@ -2,7 +2,7 @@
 //     Github: github.com/rshaghoulian
 // HackerRank: hackerrank.com/rshaghoulian
 
-/* you only have to complete the function given below.  
+/* 
 Node is defined as  
 
 class Node {
@@ -13,10 +13,10 @@ class Node {
 
 */
 
-void preOrder(Node root) {
-    if (root != null) {
-        System.out.print(root.data + " ");
-        preOrder(root.left);
-        preOrder(root.right);
+void preOrder(Node n) {
+    if (n != null) {
+        System.out.print(n.data + " ");
+        preOrder(n.left);
+        preOrder(n.right);
     }
 }

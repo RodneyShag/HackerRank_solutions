@@ -5,9 +5,8 @@
 import java.util.Scanner;
 
 public class Solution {
-
     public static void main(String[] args) {
-        /* Read and save input */
+        /* Save input */
         Scanner scan = new Scanner(System.in);
         int numerator   = scan.nextInt();
         int denominator = scan.nextInt();
@@ -34,7 +33,7 @@ public class Solution {
         return factorial(n) / (factorial(x) * factorial(n - x));
     }
     
-    private static Long factorial (int n) {
+    private static Long factorial(int n) {
         if (n < 0) {
             return null;
         }

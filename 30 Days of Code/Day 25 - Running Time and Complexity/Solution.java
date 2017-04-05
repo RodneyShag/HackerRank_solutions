@@ -5,18 +5,17 @@
 import java.util.Scanner;
 
 public class Solution {
-    
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int p = scan.nextInt();
-        for (int a0 = 0; a0 < p; a0++) {
+        int T = scan.nextInt();
+        while (T-- > 0) {
             int n = scan.nextInt();
             System.out.println(isPrime(n) ? "Prime" : "Not prime");
         }
         scan.close();
     }
     
-    public static boolean isPrime (int n) {
+    private static boolean isPrime(int n) {
         if (n < 2) {
             return false;
         }

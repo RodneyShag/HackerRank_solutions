@@ -11,7 +11,7 @@
   }
 */
 
-//          Runtime: O(n)
+//  Time Complexity: O(n)
 // Space Complexity: O(1)
 Node SortedInsert(Node head, int data) {
     /* Create Node to insert */
@@ -24,8 +24,8 @@ Node SortedInsert(Node head, int data) {
         newNode.next = head;
         head.prev = newNode;
         return newNode;
-    } else {
-        /* Walk list with 2 pointers */
+    } else {        
+        /* Walk list with 2 pointers (code is cleaner than using just 1 pointer) */
         Node n1 = null;
         Node n2 = head;
         while (n2 != null && n2.data < data) {
@@ -36,7 +36,7 @@ Node SortedInsert(Node head, int data) {
         if (n2 == null) { // insert at end of list
             n1.next = newNode;
             newNode.prev = n1;
-        } else { // insert in empty list
+        } else { // insert somewhere within the list
             n1.next = newNode;
             n2.prev = newNode;
             newNode.prev = n1;
@@ -45,3 +45,4 @@ Node SortedInsert(Node head, int data) {
         return head;
     }
 }
+

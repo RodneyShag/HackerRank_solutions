@@ -9,10 +9,10 @@ interface AdvancedArithmetic {
 }
 
 class MyCalculator implements AdvancedArithmetic {
-    //          Runtime: O(n^(1/2))
+    //  Time Complexity: O(n^(1/2))
     // Space Complexity: O(1)
     public int divisor_sum(int n) {
-        int sum = 0;
+        int sum  = 0;
         int sqrt = (int) Math.sqrt(n);
         for (int i = 1; i <= sqrt; i++) {
             if (n % i == 0) { // if "i" is a divisor
@@ -28,7 +28,7 @@ class MyCalculator implements AdvancedArithmetic {
 }
 
 class Solution {
-    public static void main(String []args) {
+    public static void main(String[] args) {
         MyCalculator my_calculator = new MyCalculator();
         System.out.print("I implemented: ");
         ImplementedInterfaceNames(my_calculator);

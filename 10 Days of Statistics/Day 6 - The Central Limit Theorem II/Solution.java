@@ -3,7 +3,6 @@
 // HackerRank: hackerrank.com/rshaghoulian
 
 public class Solution {
-
     public static void main(String[] args) {
         double ticketsLeft = 250;
         int    n           = 100;

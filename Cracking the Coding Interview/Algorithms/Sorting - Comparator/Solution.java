@@ -10,7 +10,7 @@ class Checker implements Comparator<Player> {
         if (p1.score == p2.score) {
             return p1.name.compareTo(p2.name);
         } else {
-            return p2.score - p1.score;
+            return p2.score - p1.score; // descending order
         }
     }
 }
@@ -26,7 +26,7 @@ class Player {
 }
 
 class Solution {
-    public static void main(String[] args) {
+    public static void main(String [] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
 

@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 import java.util.*;
 
 class Solution {
-    public static void main(String []args){
+    public static void main(String []args) {
         //Input
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();

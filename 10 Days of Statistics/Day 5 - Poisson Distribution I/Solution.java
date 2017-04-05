@@ -5,9 +5,8 @@
 import java.util.Scanner;
 
 public class Solution {
-
     public static void main(String[] args) {
-        /* Read and save input */
+        /* Save input */
         Scanner scan = new Scanner(System.in);
         double lambda = scan.nextDouble();
         int k = scan.nextInt();
@@ -20,7 +19,7 @@ public class Solution {
         return (Math.pow(lambda, k) * Math.pow(Math.E, -1 * lambda)) / factorial(k);
     }
     
-    private static Long factorial (int n) {
+    private static Long factorial(int n) {
         if (n < 0) {
             return null;
         }

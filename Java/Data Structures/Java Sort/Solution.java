@@ -8,15 +8,15 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-class Student{
-    private int id;
+class Student {
+    private int    id;
     private String fname;
     private double cgpa;
     public Student(int id, String fname, double cgpa) {
         super();
-        this.id = id;
+        this.id    = id;
         this.fname = fname;
-        this.cgpa = cgpa;
+        this.cgpa  = cgpa;
     }
     public int getId() {
         return id;
@@ -30,8 +30,8 @@ class Student{
 }
 
 public class Solution {
-    public static void main(String[] args){
-        Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner scan  = new Scanner(System.in);
         int testCases = Integer.parseInt(scan.nextLine());
 
         List<Student> studentList = new ArrayList<Student>();
@@ -39,14 +39,12 @@ public class Solution {
             int id       = scan.nextInt();
             String fname = scan.next();
             double cgpa  = scan.nextDouble();
-
-            Student st = new Student(id, fname, cgpa);
+            Student st   = new Student(id, fname, cgpa);
             studentList.add(st);
         }
         scan.close();
 
         Collections.sort(studentList, new StudentComparator());
-        
         for (Student st: studentList) {
             System.out.println(st.getFname());
         }

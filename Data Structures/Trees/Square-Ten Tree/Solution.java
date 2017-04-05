@@ -5,12 +5,18 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
+// I recommend skipping this problem. The problem statement is way too convoluted.
+// However, here are some takeaway concepts from this problem:
+//   - Implementing a custom BigInt as a byte[]
+//   - Implementing log2(int n)
+//   - Realizing that our algorithm can process the giant numbers in portions
+
 // - Runtime: O(n + m) where n = # of digits in L, m = # of digits in R (for interval [L,R]).
 // - Numbers can literally have millions of digits in this problem. An "int" or "long" is not big enough to store these numbers. Although Java's BigInteger is big enough, it turns out to be too slow for this problem. I wrote a custom "BigInt" class to speed up calculations.
 // - To achieve linear runtime, we need an algorithm that splits up these giant numbers into portions and processes them separately. A great way to do this is to split by level, as done below.
 // - This was a very difficult problem. You must have both linear runtime and efficient code to pass all testcases.
 public class Solution {
-    public static void main(String[] args) {
+    public static void main(String [] args) {
         /* Read and save input */
         Scanner scan = new Scanner(System.in);
         String strL  = new BigInt(scan.next()).subtract(BigInt.ONE).toString(); // subtract 1 since it's [L,R] inclusive
@@ -53,7 +59,7 @@ public class Solution {
             }
             
             /* If not skipping this level, process it */
-            if ( (!numL.equals(BigInt.ZERO) && !numL.equals(upperBound)) || startR == 0) {               
+            if ((!numL.equals(BigInt.ZERO) && !numL.equals(upperBound)) || startR == 0) {               
                 BigInt count = upperBound.subtract(numL);
                 carry = true;
                 blockCount++;
@@ -94,7 +100,7 @@ public class Solution {
         System.out.println(blockCount + "\n" + sb + sb2);
     }
     
-    static int log2 (int n) { // assumes positive number
+    static int log2(int n) { // assumes positive number
         return 31 - Integer.numberOfLeadingZeros(n);
     }
     
@@ -140,7 +146,7 @@ class BigInt {
     public BigInt add(BigInt other) {
         byte [] digitsA = digits;
         byte [] digitsB = other.digits;
-                
+        
         /* Create new Array to hold answer */
         int newLength = Math.max(digitsA.length, digitsB.length);
         if (!(digitsA[0] == 0 && digitsB[0] == 0)) {

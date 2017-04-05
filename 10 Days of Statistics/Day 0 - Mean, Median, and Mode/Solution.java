@@ -6,15 +6,12 @@ import java.util.Scanner;
 import java.util.Arrays;
 import java.util.HashMap;
 
-/* Runtime: O(n log n) due to sorting */
+// Time Complexity: O(n log n) due to sorting
 public class Solution {
-
     public static void main(String[] args) {
-
-        /* Read input: Create and fill array */
+        /* Save input */
         Scanner scan = new Scanner(System.in);
         int size = scan.nextInt();
-        
         int [] array = new int[size];
         for (int i = 0; i < size; i++) {
             array[i] = scan.nextInt();
@@ -39,26 +36,14 @@ public class Solution {
             median = array[size / 2];
         }
         
-        /* Calculate Mode */        
+        /* Calculate Mode - if there's a tie, choose the smaller number */
         HashMap<Integer, Integer> map = new HashMap<>();
         int maxOccurrences = 0;
         int mode = Integer.MAX_VALUE;
-        
         for (int num : array) {
-            /* Update occurrences for this number */
-            int occurrences;
-            if (map.containsKey(num)) {
-                occurrences = map.get(num) + 1;
-            } else {
-                occurrences = 1;
-            }
-            map.put(num, occurrences);
-            
-            /* Update our mode. If there's a tie, choose the smaller number */
-            if (occurrences > maxOccurrences) {
-                maxOccurrences = occurrences;
-                mode = num;
-            } else if (occurrences == maxOccurrences && num < mode) { // this does the tie-breaking
+            map.merge(num, 1, Integer::sum);
+            int occurrences = map.get(num);
+            if (occurrences > maxOccurrences || (occurrences == maxOccurrences && num < mode)) {
                 maxOccurrences = occurrences;
                 mode = num;
             }

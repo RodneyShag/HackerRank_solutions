@@ -6,6 +6,7 @@ import java.util.Scanner;
 import java.util.Arrays;
 import java.util.Collections;
 
+// Time Complexity: O(n log n)
 public class Solution {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -18,7 +19,7 @@ public class Solution {
         System.out.println(minimumMiles(calories));
     }
     
-    /* Uses Greedy Algorithm */
+    /* Eat the largest cupcakes first */
     private static long minimumMiles(Integer [] calories) {
         Arrays.sort(calories, Collections.reverseOrder());
         long multiplier = 1;

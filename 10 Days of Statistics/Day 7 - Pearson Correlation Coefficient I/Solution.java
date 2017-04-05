@@ -5,9 +5,8 @@
 import java.util.Scanner;
 
 public class Solution {
-
     public static void main(String[] args) {
-        /* Read and save input */
+        /* Save input */
         Scanner scan = new Scanner(System.in);
         int size = scan.nextInt();
         double [] xs = new double[size];
@@ -18,10 +17,11 @@ public class Solution {
         for (int i = 0; i < size; i++) {
             ys[i] = scan.nextDouble();
         }
+        scan.close();
         
         System.out.println(pearson(xs, ys));
     }
-
+    
     /* Calculates Pearson coefficient */
     private static Double pearson(double [] xs, double [] ys) {
         if (xs == null || ys == null || xs.length != ys.length) {
@@ -62,3 +62,4 @@ public class Solution {
         return Math.sqrt(variance);
     }
 }
+
