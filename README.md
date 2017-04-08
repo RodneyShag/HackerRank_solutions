@@ -11,7 +11,7 @@
 * [Cracking the Coding Interview](#cracking-the-coding-interview) (Complete)
 * [Data Structures](#data-structures) (41/107 solutions)
 * [Java](#java) (Complete)
-* [SQL](#SQL) (40/58 solutions)
+* [SQL](#sql) (40/58 solutions)
 
 Solutions are coded using Java 8
 
