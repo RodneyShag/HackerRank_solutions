@@ -1,0 +1,10 @@
+--     Author: Rodney Shaghoulian
+--     Github: github.com/rshaghoulian
+-- HackerRank: hackerrank.com/rshaghoulian
+
+SELECT
+    TRUNCATE(MAX(LAT_N), 4)
+FROM
+    STATION
+WHERE
+    LAT_N < 137.2345;
