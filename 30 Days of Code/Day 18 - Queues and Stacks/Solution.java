@@ -8,19 +8,22 @@ import java.util.*;
 // ArrayDeque "is likely to be faster than Stack when used as a stack, and faster than LinkedList when used as a queue." - Java documentation
 
 public class Solution {
+    /* Stack - using an ArrayDeque */
     ArrayDeque<Character> dequeAsStack = new ArrayDeque<>();
-    ArrayDeque<Character> dequeAsQueue = new ArrayDeque<>();
-
+    
     void pushCharacter(char ch) {
         dequeAsStack.push(ch);
     }
-
-    void enqueueCharacter(char ch) {
-        dequeAsQueue.add(ch);
-    }
-
+    
     char popCharacter() {
         return dequeAsStack.pop();
+    }
+    
+    /* Queue - using an ArrayDeque */
+    ArrayDeque<Character> dequeAsQueue = new ArrayDeque<>();
+    
+    void enqueueCharacter(char ch) {
+        dequeAsQueue.add(ch);
     }
 
     char dequeueCharacter() {

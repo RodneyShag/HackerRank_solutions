@@ -3,16 +3,21 @@
 // HackerRank: hackerrank.com/rshaghoulian
 
 import java.util.Scanner;
-import java.util.Deque;
 import java.util.ArrayDeque;
 import java.util.HashMap;
 
+// Why not use just a HashMap instead of both a HashMap and an ArrayDeque? 
+// Well, an ArrayDeque helps keep the ordering of elements. Although the 
+// elements are also in our HashMap, they is no ordering to the elements 
+// in the HashMap since it's just a set.
+    
 //  Time Complexity: O(n)
 // Space Complexity: O(n)
+
 public class test {
-    public static void main(String[] args) {
+    public static void main(String [] args) {
         HashMap<Integer, Integer> map = new HashMap<>();
-        Deque<Integer> deque          = new ArrayDeque<>();
+        ArrayDeque<Integer> deque     = new ArrayDeque<>();
         
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
