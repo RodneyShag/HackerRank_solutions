@@ -151,12 +151,7 @@ public class Solution {
         Scanner scan = new Scanner(System.in);
         int numNodes = scan.nextInt();
         
-        /* Handle 1-node tree */
-        if (numNodes == 1) {
-            return new TreeLeaf(values[0], colors[0], 0);
-        }
-        
-        /* Read and save nodes and colors */
+        /* Save nodes and colors */
         values = new int[numNodes];
         colors = new Color[numNodes];
         map = new HashMap<>(numNodes);
@@ -190,6 +185,11 @@ public class Solution {
         }
         scan.close();
         
+        /* Handle 1-node tree */
+        if (numNodes == 1) {
+            return new TreeLeaf(values[0], colors[0], 0);
+        }
+
         /* Create Tree */
         TreeNode root = new TreeNode(values[0], colors[0], 0);
         addChildren(root, 1);

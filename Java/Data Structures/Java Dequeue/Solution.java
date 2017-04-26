@@ -27,7 +27,7 @@ public class test {
         for (int i = 0; i < n; i++) {
             /* Remove old value (if necessary) */
             if (i >= m) {
-                int old = deque.remove();
+                int old = deque.removeFirst();
                 if (map.get(old) == 1) {
                     map.remove(old);
                 } else {
@@ -37,7 +37,7 @@ public class test {
             
             /* Add new value */
             int num = scan.nextInt();
-            deque.add(num);
+            deque.addLast(num);
             map.merge(num, 1, Integer::sum);
             
             max = Math.max(max, map.size());

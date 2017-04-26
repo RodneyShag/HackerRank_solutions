@@ -37,8 +37,6 @@ import java.math.BigInteger;
 // Original Number: 10110100
 //     Number - 1 : 10110011   and the number of 1s is 5
 
-// We use a BigInteger instead of a long since we can't easily read in an UNSIGNED long.
-
 public class Solution {
     public static void main(String [] args) {
         Scanner scan = new Scanner(System.in);

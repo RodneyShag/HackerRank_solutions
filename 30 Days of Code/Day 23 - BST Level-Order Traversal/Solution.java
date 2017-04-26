@@ -15,22 +15,24 @@ class Node {
 }
 
 class Solution {
-    static void levelOrder(Node root){
-        ArrayDeque<Node> deque = new ArrayDeque<>(); // use deque as a queue
-        if (root != null) {
-            deque.add(root);
+    static void levelOrder(Node root) {
+        if (root == null) {
+            return;
         }
+        ArrayDeque<Node> deque = new ArrayDeque<>(); // use deque as a queue
+        deque.add(root);
         while (!deque.isEmpty()) {
-            Node n = deque.remove();
+            Node n = deque.removeFirst();
             System.out.print(n.data + " ");
             if (n.left != null) {
-                deque.add(n.left);
+                deque.addLast(n.left);
             }
             if (n.right != null) {
-                deque.add(n.right);
+                deque.addLast(n.right);
             }
         }
     }
+
 
     public static Node insert(Node root,int data){
         if (root == null) {

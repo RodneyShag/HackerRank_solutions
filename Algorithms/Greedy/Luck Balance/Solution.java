@@ -30,7 +30,7 @@ public class Solution {
         scan.close();
         
         /* Compete in "important" contests */
-        quickselect(contest, 0, contest.size() - 1, contest.size() - K);
+        quickselect(contest, contest.size() - K);
         for (int i = 0; i < contest.size(); i++) {
             if (i < contest.size() - K) {
                 savedLuck -= contest.get(i); // win contest
@@ -49,24 +49,20 @@ public class Solution {
      *    Our formula above is a geometric series with "r = 1/2", which would converge to 1/(1-r) for infinite geometric series
      *  - O(n^2) worst-case run-time is if we consistently pick a bad pivot
      */
-    private static Integer quickselect(ArrayList<Integer> list, int start, int end, int n) {
-        if (n < 0 || n >= list.size() || start < 0 || start >= list.size() || end < 0 || end >= list.size()) {
-            return null;
+    private static Integer quickselect(ArrayList<Integer> list, int n) {
+        int start = 0;
+        int end = list.size() - 1;
+        while (start <= end) {
+            int pivotIndex = partition(list, start, end);
+            if (pivotIndex == n) {
+                return list.get(n);
+            } else if (pivotIndex < n) {
+                start = pivotIndex + 1;
+            } else {
+                end = pivotIndex - 1;
+            }
         }
-        
-        if (start == end) { // a 1-element list is our base case
-            return list.get(start);
-        }
-        int pivotIndex = partition(list, start, end);
-        
-        /* Recurse on only 1 side, until found */
-        if (n == pivotIndex) {
-            return list.get(pivotIndex);
-        } else if (n < pivotIndex) {
-            return quickselect(list, start, pivotIndex - 1, n);
-        } else {
-            return quickselect(list, pivotIndex + 1, end, n);
-        }
+        return null;
     }
     
     /* Partitions list into 2 parts. 
