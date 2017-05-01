@@ -14,9 +14,10 @@
 // of the list, have it jump to the beginning of the other list. Create
 // 2 of these pointers, pointing to 2 different list heads. The pointers  
 // will collide at the merge point after 1 or 2 passes.
-//
-//          Runtime: O(n)
+
+//  Time Complexity: O(n + m)
 // Space Complexity: O(1)
+
 int FindMergeNode(Node headA, Node headB) {
     Node currA = headA;
     Node currB = headB;

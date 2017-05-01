@@ -3,8 +3,6 @@
 // HackerRank: hackerrank.com/rshaghoulian
 
 /*
-  Merge two linked lists 
-
   Node is defined as 
   class Node {
      int data;
@@ -12,8 +10,9 @@
   }
 */
 
-//  Time Complexity: O(n)
+//  Time Complexity: O(n + m)
 // Space Complexity: O(1)
+  
 Node MergeLists(Node currA, Node currB) {
     if (currA == null) {
         return currB;

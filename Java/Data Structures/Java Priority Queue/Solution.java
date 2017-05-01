@@ -64,9 +64,10 @@ public class Solution {
 }
 
 class StudentComparator implements Comparator<Student> {
+    double epsilon = 0.001; // since we shouldn't use "==" with doubles
     @Override
     public int compare(Student s1, Student s2) {
-        if (Double.compare(s1.getCgpa(), s2.getCgpa()) != 0) {
+        if (Math.abs(s1.getCgpa() - s2.getCgpa()) > epsilon) {
             return s1.getCgpa() < s2.getCgpa() ? 1 : -1; // descending order
         } else if ( ! s1.getFname().equals(s2.getFname())) {
             return s1.getFname().compareTo(s2.getFname());

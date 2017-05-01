@@ -84,8 +84,15 @@ class Pair {
 
 /* This lets us sort Pairs based on their value field */
 class PairValueComparator implements Comparator<Pair> {
+    double epsilon = 0.0001; // shouldn't use " == " to compare "doubles"
     @Override
     public int compare(Pair p1, Pair p2) {
-        return Double.compare(p1.value, p2.value);
+        if (Math.abs(p1.value - p2.value) < epsilon) {
+            return 0;
+        } else if (p1.value < p2.value) {
+            return -1;
+        } else {
+            return 1;
+        }
     }
 }
