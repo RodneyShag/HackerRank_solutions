@@ -22,7 +22,7 @@ public class Solution {
     
     /* Basically a depth-first search (DFS). 
        Marks each array value as 1 when visiting (Side-effect: alters array) */
-    private static boolean isSolvable(int [] array, int m, int i) {
+    private static boolean isSolvable(int[] array, int m, int i) {
         /* Base Cases */
         if (i < 0 || array[i] == 1) {
             return false;
@@ -32,9 +32,9 @@ public class Solution {
         
         array[i] = 1; // marks as visited
 
-        /* Recursive Cases */
-        return isSolvable(array, m, i - 1) || 
+        /* Recursive Cases (Tries +m first to try to finish game quickly) */
+        return isSolvable(array, m, i + m) || 
                isSolvable(array, m, i + 1) || 
-               isSolvable(array, m, i + m);
+               isSolvable(array, m, i - 1);
     }
 }

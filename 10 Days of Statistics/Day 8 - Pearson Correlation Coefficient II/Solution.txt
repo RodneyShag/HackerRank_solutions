@@ -34,5 +34,5 @@ p = 3/4 or -3/4 (depending on correlation of x and y)
 
 *** Step 3: Find out if p is postive or negative ***
 
-We simply plot 2 sets of (x,y) points to see if x and y are positively or negatively correlated.
-In this case, they are negatively correlated, so p = -3/4
+Notice that both of the original line equations have negative slopes,
+so x and y are negatively correlated by definition. So, p = -3/4
