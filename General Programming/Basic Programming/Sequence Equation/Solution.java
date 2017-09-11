@@ -10,7 +10,7 @@ import java.util.Scanner;
 // - We need find a y where p(p(y)) = x. This equation can be rewritten as y = p_inverse(p_inverse(x)), which is the version of the equation we use to calculate and print "y".
 
 public class Solution {
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         /* Create function: p_inverse */
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();

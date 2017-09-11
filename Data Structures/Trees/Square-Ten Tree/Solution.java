@@ -16,7 +16,7 @@ import java.util.Arrays;
 // - To achieve linear runtime, we need an algorithm that splits up these giant numbers into portions and processes them separately. A great way to do this is to split by level, as done below.
 // - This was a very difficult problem. You must have both linear runtime and efficient code to pass all testcases.
 public class Solution {
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         /* Read and save input */
         Scanner scan = new Scanner(System.in);
         String strL  = new BigInt(scan.next()).subtract(BigInt.ONE).toString(); // subtract 1 since it's [L,R] inclusive

@@ -13,7 +13,7 @@ import java.util.Scanner;
 // If the distance between the kangaroos (x2 - x1) is divisible by how much closer they get in each step (v2 - v1), then they will land at the same location at the same time. Otherwise, 1 kangaroo will jump over the other and they will never be at the same location at the same time.
 
 public class Solution {
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         /* Save input */
         Scanner scan = new Scanner(System.in);
         int x1 = scan.nextInt();

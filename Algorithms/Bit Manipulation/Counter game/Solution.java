@@ -38,7 +38,7 @@ import java.math.BigInteger;
 //     Number - 1 : 10110011   and the number of 1s is 5
 
 public class Solution {
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int T = scan.nextInt();
         while (T-- > 0) {

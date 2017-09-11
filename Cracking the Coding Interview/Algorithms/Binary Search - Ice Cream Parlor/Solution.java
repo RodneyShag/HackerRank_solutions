@@ -8,7 +8,7 @@ import java.util.HashMap;
 //  Time Complexity: O(n)
 // Space Complexity: O(n)
 public class Solution {
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int t = scan.nextInt();
         while (t-- > 0) {

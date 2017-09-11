@@ -33,7 +33,7 @@ public class Solution {
     
     public static final int NUM_LETTERS = 26;
     
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         /* Save input */
         Scanner scan = new Scanner(System.in);
         int length = scan.nextInt();

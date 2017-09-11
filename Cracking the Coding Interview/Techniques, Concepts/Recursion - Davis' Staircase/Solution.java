@@ -15,7 +15,7 @@ import java.util.HashMap;
 public class Solution {
     private static HashMap<Integer, Integer> cache = new HashMap<>();
     
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int testcases = scan.nextInt();
         cache.put(0, 1); // base case

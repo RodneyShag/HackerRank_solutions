@@ -9,7 +9,7 @@ import java.util.Scanner;
 //   2) x ^ 0 = x
 //   3) XOR is commutative and associative
 public class Solution {
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         /* Read input */
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();

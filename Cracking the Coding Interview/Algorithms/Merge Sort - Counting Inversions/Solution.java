@@ -12,7 +12,7 @@ import java.util.Arrays;
 //  Time Complexity: O(n log n)
 // Space Complexity: O(n)
 public class Solution {
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int testcases = scan.nextInt();
         while (testcases-- > 0) {

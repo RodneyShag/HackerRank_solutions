@@ -8,7 +8,7 @@ import java.util.Arrays;
 //  Time Complexity: O(N + T)
 // Space Complexity: O(N + T)
 public class Solution {
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         /* Save input */
         Scanner scan = new Scanner(System.in);
         int T = scan.nextInt();

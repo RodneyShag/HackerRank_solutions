@@ -8,7 +8,7 @@ import java.util.BitSet;
 public class Solution {
     private static final int NUM_ELEMENTS = 26;
     
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int N = scan.nextInt();
         

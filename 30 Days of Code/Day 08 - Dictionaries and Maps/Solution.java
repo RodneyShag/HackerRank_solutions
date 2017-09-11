@@ -6,7 +6,7 @@ import java.util.Scanner;
 import java.util.HashMap;
 
 class Solution {
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         /* Save input as entries in a HashMap */
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();

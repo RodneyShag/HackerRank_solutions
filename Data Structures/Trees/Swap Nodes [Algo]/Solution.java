@@ -7,7 +7,7 @@ import java.util.Scanner;
 // Main trick: Repesent our tree as a 1-D array
 
 public class Solution {
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         /* Create tree */
         Scanner scan = new Scanner(System.in);
         int N = scan.nextInt();

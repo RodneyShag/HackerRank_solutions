@@ -7,7 +7,7 @@ import java.util.Scanner;
 //  Time Complexity: O(n)
 // Space Complexity: O(1) by doing an "in place" rotation
 public class Solution {
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         /* Save input */
         Scanner scan = new Scanner(System.in);
         int size         = scan.nextInt();

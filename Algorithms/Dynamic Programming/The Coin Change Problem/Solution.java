@@ -9,7 +9,7 @@ import java.util.HashMap;
 // Must use "long" instead of "int" to avoid integer overflow
 
 public class Solution {
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         /* Save input */
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();

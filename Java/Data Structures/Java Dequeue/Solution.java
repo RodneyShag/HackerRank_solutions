@@ -15,7 +15,7 @@ import java.util.HashMap;
 // Space Complexity: O(n)
 
 public class test {
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         HashMap<Integer, Integer> map = new HashMap<>();
         ArrayDeque<Integer> deque     = new ArrayDeque<>();
         

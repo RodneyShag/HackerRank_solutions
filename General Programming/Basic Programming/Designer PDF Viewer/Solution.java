@@ -8,7 +8,7 @@ public class Solution {
     
     private static final int letters = 26;
     
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         /* Save input */
         Scanner scan = new Scanner(System.in);
         int [] height = new int[letters];

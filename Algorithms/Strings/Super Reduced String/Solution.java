@@ -12,7 +12,7 @@ import java.util.Stack;
 // through it properly since iteration order is opposite that of a Stack.
 
 public class Solution {
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         /* Save input */
         Scanner scan = new Scanner(System.in);
         String str = scan.next();

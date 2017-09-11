@@ -13,7 +13,7 @@ public class Solution {
     private static int rows; // here for convenience
     private static int cols; // here for convenience
     
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         /* Save input grid */
         Scanner scan = new Scanner(System.in);
         rows = scan.nextInt();

@@ -14,7 +14,7 @@ import java.util.Scanner;
 //         and a delete.
 
 public class Solution {
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String s = scan.next();
         String t = scan.next();

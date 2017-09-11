@@ -13,7 +13,7 @@ import java.util.ArrayList;
 //     - used StringBuffer to do 1 output to console instead of multiple outputs
 
 public class Solution {
-    public static void main(String [] args) throws IOException {
+    public static void main(String[] args) throws IOException {
         final int maxValue = 100;
         
         /* Create HashMap with empty "buckets" to put Strings into */

@@ -17,7 +17,7 @@ import java.util.Scanner;
 //  Time Complexity: O(n + m)
 // Space Complexity: O(n)
 public class Solution {
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int N = scan.nextInt();
         int M = scan.nextInt();

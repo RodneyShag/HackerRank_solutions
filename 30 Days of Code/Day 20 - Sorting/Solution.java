@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Solution {
     private static int swaps = 0;
     
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         /* Save input */
         Scanner scan = new Scanner(System.in);
         int size = scan.nextInt();

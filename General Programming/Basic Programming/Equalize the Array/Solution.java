@@ -11,7 +11,7 @@ public class Solution {
     
     private static final int size = 100;
     
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
         int [] counts = new int[size + 1]; // could alternatively use a HashMap

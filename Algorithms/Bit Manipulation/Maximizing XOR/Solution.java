@@ -19,7 +19,7 @@ import java.util.Scanner;
 // Notice that we never directly calculate the values of A and B
 
 public class Solution {
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int L = scan.nextInt();
         int R = scan.nextInt();

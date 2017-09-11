@@ -10,7 +10,7 @@ import java.util.HashMap;
 /* BufferedReader is used instead of Scanner since it's faster and
    won't time out on HackerRank test cases when using Java8 */
 class Solution {
-    public static void main(String [] args) throws IOException {
+    public static void main(String[] args) throws IOException {
         /* Save input as entries in a HashMap */
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());

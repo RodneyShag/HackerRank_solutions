@@ -17,7 +17,7 @@ import java.util.Collections;
 
 // Time Complexity: O(n log n)
 public class Solution {
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
         Integer [] calories = new Integer[n]; // Use Integer instead of int to make sorting in simpler
