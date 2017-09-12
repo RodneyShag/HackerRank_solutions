@@ -22,7 +22,7 @@ public class Solution {
                 array[i] = scan.nextInt();
             }
             MergeSort ms = new MergeSort();
-            System.out.println(ms.mergeSort(arr));
+            System.out.println(ms.mergeSort(array));
         }
         scan.close();
     }
