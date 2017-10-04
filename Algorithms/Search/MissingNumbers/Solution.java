@@ -15,7 +15,7 @@ public class Solution {
         }
         int arrayBLen = in.nextInt();
         int[] arrB = new int[arrayBLen];
-        Map<Integer, Integer> freq = new HashMap<>();
+        Map<Integer, Integer> freq = new TreeMap<>();
         for (int i = 0; i < arrayBLen; i++) {
             arrB[i] = in.nextInt();
             if (freq.containsKey(arrB[i])) {
@@ -35,10 +35,8 @@ public class Solution {
                 res[index++] = key;
             }
         }
-        Arrays.sort(res);
-        for (int re : res) {
-            if (re > 0)
-                System.out.print(re + " ");
+        for (int i = 0; i < index; i++) {
+            System.out.print(res[i] + " ");
         }
     }
 }
