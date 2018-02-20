@@ -6,16 +6,20 @@ import java.util.Scanner;
 import java.time.LocalDate;
 
 public class Solution {
+    public static String getDay(String day, String month, String year) {
+        int d = Integer.valueOf(day);
+        int m = Integer.valueOf(month);
+        int y = Integer.valueOf(year);
+        LocalDate date = LocalDate.of(y, m, d);
+        return date.getDayOfWeek().toString();
+    }
+
     public static void main(String[] args) {
-        /* Read input */
-        Scanner scan = new Scanner(System.in);
-        int month = scan.nextInt();
-        int day   = scan.nextInt();
-        int year  = scan.nextInt();
-        scan.close();
+        Scanner in = new Scanner(System.in);
+        String month = in.next();
+        String day   = in.next();
+        String year  = in.next();
         
-        /* Create LocalDate instance */
-        LocalDate date = LocalDate.of(year, month, day);
-        System.out.println(date.getDayOfWeek());
+        System.out.println(getDay(day, month, year));
     }
 }
