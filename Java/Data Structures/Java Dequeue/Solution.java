@@ -41,6 +41,12 @@ public class test {
             map.merge(num, 1, Integer::sum);
             
             max = Math.max(max, map.size());
+            
+            /* If all integers are unique, we have found our largest
+               possible answer, so we can break out of loop */
+            if (max == m) {
+                break;
+            }
         }
         
         scan.close();
