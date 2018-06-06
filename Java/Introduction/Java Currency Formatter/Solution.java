@@ -10,7 +10,7 @@ public class Solution {
     public static void main(String[] args) {
         /* Save input */
         Scanner scan = new Scanner(System.in);
-        double payment = scanner.nextDouble();
+        double payment = scan.nextDouble();
         scan.close();
 
         /* Create custom Locale for India - I used the "IANA Language Subtag Registry" to find India's country code */
