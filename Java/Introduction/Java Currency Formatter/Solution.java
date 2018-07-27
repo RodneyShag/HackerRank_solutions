@@ -1,6 +1,6 @@
 //     Author: Rodney Shaghoulian
-//     Github: github.com/rshaghoulian
-// HackerRank: hackerrank.com/rshaghoulian
+//     Github: github.com/RodneyShag
+// HackerRank: hackerrank.com/RodneyShag
 
 import java.util.Scanner;
 import java.text.NumberFormat;
@@ -10,7 +10,7 @@ public class Solution {
     public static void main(String[] args) {
         /* Save input */
         Scanner scan = new Scanner(System.in);
-        double payment = scanner.nextDouble();
+        double payment = scan.nextDouble();
         scan.close();
 
         /* Create custom Locale for India - I used the "IANA Language Subtag Registry" to find India's country code */

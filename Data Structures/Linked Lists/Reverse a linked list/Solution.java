@@ -1,6 +1,6 @@
 //     Author: Rodney Shaghoulian
-//     Github: github.com/rshaghoulian
-// HackerRank: hackerrank.com/rshaghoulian
+//     Github: github.com/RodneyShag
+// HackerRank: hackerrank.com/RodneyShag
 
 /*
   Reverse a linked list and return pointer to the head

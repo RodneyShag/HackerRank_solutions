@@ -1,6 +1,6 @@
 //     Author: Rodney Shaghoulian
-//     Github: github.com/rshaghoulian
-// HackerRank: hackerrank.com/rshaghoulian
+//     Github: github.com/RodneyShag
+// HackerRank: hackerrank.com/RodneyShag
 
 /*
   Insert Node at the beginning of a linked list 

@@ -1,6 +1,6 @@
 --     Author: Rodney Shaghoulian
---     Github: github.com/rshaghoulian
--- HackerRank: hackerrank.com/rshaghoulian
+--     Github: github.com/RodneyShag
+-- HackerRank: hackerrank.com/RodneyShag
 
 SELECT IF (S.Marks < 70, 'NULL', S.Name), G.Grade, S.Marks
 FROM Students AS S, Grades AS G
