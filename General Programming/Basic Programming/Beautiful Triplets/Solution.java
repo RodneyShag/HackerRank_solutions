@@ -5,6 +5,9 @@
 import java.util.Scanner;
 import java.util.HashSet;
 
+
+// Note: This problem may have been changed by HackerRank, so the code below may not work. However, the concept is the same.
+
 /*
 
 We are given an increasing input sequence, so no duplicate values exist.
