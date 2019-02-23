@@ -2,7 +2,7 @@
     <a href="https://www.hackerrank.com/RodneyShag">
         <img height=85 src="https://d3keuzeb2crhkn.cloudfront.net/hackerrank/assets/styleguide/logo_wordmark-f5c5eb61ab0a154c3ed9eda24d0b9e31.svg">
     </a>
-    <br>320 efficient solutions to HackerRank problems
+    <br>318 efficient solutions to HackerRank problems
 </p>
 
 * [10 Days of Statistics](#10-days-of-statistics)
@@ -177,7 +177,6 @@ SQL solutions are coded using MySQL
 |      Trees      | [Tree: Height of a Binary Tree](https://www.hackerrank.com/challenges/tree-height-of-a-binary-tree)                                                    |   10   | [Solution.java](https://github.com/RodneyShag/HackerRank_solutions/blob/master/Data%20Structures/Trees/Tree%20-%20Height%20of%20a%20Binary%20Tree/Solution.java)                                         |
 |      Trees      | [Tree: Level Order Traversal](https://www.hackerrank.com/challenges/tree-level-order-traversal)                                                        |   20   | [Solution.java](https://github.com/RodneyShag/HackerRank_solutions/blob/master/Data%20Structures/Trees/Tree%20-%20Level%20Order%20Traversal/Solution.java)                                               |
 |      Trees      | [Tree: Huffman Decoding](https://www.hackerrank.com/challenges/tree-huffman-decoding)                                                                  |   20   | [Solution.java](https://github.com/RodneyShag/HackerRank_solutions/blob/master/Data%20Structures/Trees/Tree%20-%20Huffman%20Decoding/Solution.java)                                                      |
-|      Trees      | [Tree: Top View](https://www.hackerrank.com/challenges/tree-top-view)                                                                                  |   20   | [Solution.java](https://github.com/RodneyShag/HackerRank_solutions/blob/master/Data%20Structures/Trees/Tree%20-%20Top%20View/Solution.java)                                                              |
 |      Trees      | [Binary Search Tree: Insertion](https://www.hackerrank.com/challenges/binary-search-tree-insertion)                                                    |   20   | [Solution.java](https://github.com/RodneyShag/HackerRank_solutions/blob/master/Data%20Structures/Trees/Binary%20Search%20Tree%20-%20Insertion/Solution.java)                                             |
 |      Trees      | [Binary Search Tree: Lowest Common Ancestor](https://www.hackerrank.com/challenges/binary-search-tree-lowest-common-ancestor)                          |   30   | [Solution.java](https://github.com/RodneyShag/HackerRank_solutions/blob/master/Data%20Structures/Trees/Binary%20Search%20Tree%20-%20Lowest%20Common%20Ancestor/Solution.java)                            |
 |      Trees      | [Is This a Binary Search Tree?](https://www.hackerrank.com/challenges/is-binary-search-tree)                                                           |   30   | [Solution.java](https://github.com/RodneyShag/HackerRank_solutions/blob/master/Data%20Structures/Trees/Is%20This%20a%20Binary%20Search%20Tree/Solution.java)                                             |
