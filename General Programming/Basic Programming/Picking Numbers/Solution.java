@@ -2,8 +2,6 @@
 //     Github: github.com/RodneyShag
 // HackerRank: hackerrank.com/RodneyShag
 
-import java.util.Scanner;
-
 // Algorithm: 
 //  1 - Notice there is a special restriction on the range of values in the array: values are between 0 and 100.
 //  2 - Since the order of elements in our array does not matter, we can just keep the counts of each number.
@@ -13,10 +11,24 @@ import java.util.Scanner;
 //      maximal solution
 
 // Time complexity: O(n)
-public class Solution {
+
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.regex.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
+
+class Result {
+
     static final int MAX_VALUE = 100;
-    
-    static int solve(int[] array) {
+
+    public static int pickingNumbers(List<Integer> array) {
         /* Save counts of each number */
         int[] counts = new int[MAX_VALUE];
         for (int num : array) {
@@ -31,16 +43,22 @@ public class Solution {
         }
         return max;
     }
+}
 
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int n = scan.nextInt();
-        int[] array = new int[n];
-        for (int i = 0; i < n; i++) {
-            array[i] = scan.nextInt();
-        }
-        scan.close();
-        
-        System.out.println(solve(array));
+/* HackerRank-provided test code */
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+        int n = Integer.parseInt(bufferedReader.readLine().trim());
+        List<Integer> a = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
+            .map(Integer::parseInt)
+            .collect(toList());
+        int result = Result.pickingNumbers(a);
+        bufferedWriter.write(String.valueOf(result));
+        bufferedWriter.newLine();
+        bufferedReader.close();
+        bufferedWriter.close();
     }
 }

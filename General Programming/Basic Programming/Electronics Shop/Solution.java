@@ -12,8 +12,10 @@ import java.util.Arrays;
 //        If the combined price is too low, update "max", and find a more expensive keyboard (i++)
 
 // Time complexity: O(n log n + m log m)
+// Space complexity: Depends on space complexity of Arrays.sort()
+
 public class Solution {
-    static int getMoneySpent(int[] keyboards, int[] drives, int s) {
+    static int getMoneySpent(int[] keyboards, int[] drives, int b) {
         Arrays.sort(keyboards); // O(n log n) time complexity
         Arrays.sort(drives);    // O(m log m) time complexity
         int max = -1;
@@ -21,7 +23,7 @@ public class Solution {
         int j = drives.length - 1;
         while (i < keyboards.length && j >= 0) { // O(n + m) time complexity
             int cost = keyboards[i] + drives[j];
-            if (cost > s) {
+            if (cost > b) {
                 j--; // look for a cheaper hard drive
             } else {
                 if (cost > max) {
