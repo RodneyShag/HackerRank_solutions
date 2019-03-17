@@ -2,7 +2,7 @@
     <a href="https://www.hackerrank.com/RodneyShag">
         <img height=85 src="https://d3keuzeb2crhkn.cloudfront.net/hackerrank/assets/styleguide/logo_wordmark-f5c5eb61ab0a154c3ed9eda24d0b9e31.svg">
     </a>
-    <br>318 efficient solutions to HackerRank problems
+    <br>317 efficient solutions to HackerRank problems
 </p>
 
 * [10 Days of Statistics](#10-days-of-statistics)
@@ -245,7 +245,6 @@ SQL solutions are coded using MySQL
 |      Basic Programming      | [Angry Professor](https://www.hackerrank.com/challenges/angry-professor)                                                     |   20   | [Solution.java](https://github.com/RodneyShag/HackerRank_solutions/blob/master/General%20Programming/Basic%20Programming/Angry%20Professor/Solution.java)                           |
 |      Basic Programming      | [Extra Long Factorials](https://www.hackerrank.com/challenges/extra-long-factorials)                                         |   20   | [Solution.java](https://github.com/RodneyShag/HackerRank_solutions/blob/master/General%20Programming/Basic%20Programming/Extra%20Long%20Factorials/Solution.java)                   |
 |      Basic Programming      | [Minimum Distances](https://www.hackerrank.com/challenges/minimum-distances)                                                 |   20   | [Solution.java](https://github.com/RodneyShag/HackerRank_solutions/blob/master/General%20Programming/Basic%20Programming/Minimum%20Distances/Solution.java)                         |
-|      Basic Programming      | [Beautiful Triplets](https://www.hackerrank.com/challenges/beautiful-triplets)                                               |   20   | [Solution.java](https://github.com/RodneyShag/HackerRank_solutions/blob/master/General%20Programming/Basic%20Programming/Beautiful%20Triplets/Solution.java)                        |
 |      Basic Programming      | [Jumping on the Clouds](https://www.hackerrank.com/challenges/jumping-on-the-clouds)                                         |   20   | [Solution.java](https://github.com/RodneyShag/HackerRank_solutions/blob/master/General%20Programming/Basic%20Programming/Jumping%20on%20the%20Clouds/Solution.java)                 |
 |      Basic Programming      | [Equalize the Array](https://www.hackerrank.com/challenges/equality-in-a-array)                                              |   20   | [Solution.java](https://github.com/RodneyShag/HackerRank_solutions/blob/master/General%20Programming/Basic%20Programming/Equalize%20the%20Array/Solution.java)                      |
 |      Basic Programming      | [Designer PDF Viewer](https://www.hackerrank.com/challenges/designer-pdf-viewer)                                             |   20   | [Solution.java](https://github.com/RodneyShag/HackerRank_solutions/blob/master/General%20Programming/Basic%20Programming/Designer%20PDF%20Viewer/Solution.java)                     |
