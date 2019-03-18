@@ -7,17 +7,7 @@ import java.util.Scanner;
 public class Solution {
     private static final int NUM_LETTERS = 26; // we assume lower-case letters only
     
-    public static void main(String[] args) {
-        /* Save input */
-        Scanner scan = new Scanner(System.in);
-        String a = scan.next();
-        String b = scan.next();
-        scan.close();
-
-        System.out.println(numberNeeded(a, b));
-    }
-    
-    private static int numberNeeded(String first, String second) {
+    private static int createFilledArray(String first, String second) {
         /* For each string, create an array of the count of each character */
         int [] array1 = createFilledArray(first);
         int [] array2 = createFilledArray(second);

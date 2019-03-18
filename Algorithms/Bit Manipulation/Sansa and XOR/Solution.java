@@ -28,28 +28,16 @@ import java.util.Scanner;
 
 //  Time Complexity: O(n)
 
-public class Solution {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int T = scan.nextInt();
-        while (T-- > 0) {
-            int n = scan.nextInt();
-            int [] array = new int[n];
-            for (int i = 0; i < n; i++) {
-                array[i] = scan.nextInt();
-            }
-            if (n % 2 == 0) { // Case 1
-                System.out.println(0);
-            } else { // Case 2
-                int result = 0;
-                for (int i = 0; i < n; i++) {
-                    if (i % 2 == 0) {
-                        result ^= array[i];
-                    }
-                }
-                System.out.println(result);
+static int sansaXor(int[] array) {
+    if (array.length % 2 == 0) { // Case 1
+        return 0;
+    } else { // Case 2
+        int result = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (i % 2 == 0) {
+                result ^= array[i];
             }
         }
-        scan.close();
+       return result;
     }
 }

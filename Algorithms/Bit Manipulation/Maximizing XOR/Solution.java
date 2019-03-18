@@ -2,8 +2,6 @@
 //     Github: github.com/RodneyShag
 // HackerRank: hackerrank.com/RodneyShag
 
-import java.util.Scanner;
-
 // To maximize A xor B, we want A and B to differ as much as possible at every bit index.
 // We first find the most significant bit that we can force to differ by looking at L and R.
 // For all of the lesser significant bits in A and B, we can always ensure that they differ 
@@ -18,17 +16,9 @@ import java.util.Scanner;
 //
 // Notice that we never directly calculate the values of A and B
 
-public class Solution {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int L = scan.nextInt();
-        int R = scan.nextInt();
-        scan.close();
-        
-        int xored  = L ^ R;
-        int significantBit = 31 - Integer.numberOfLeadingZeros(xored);
-        int result = (1 << (significantBit + 1)) - 1;
-
-        System.out.println(result);
-    }
+static int maximizingXor(int L, int R) {
+    int xored  = L ^ R;
+    int significantBit = 31 - Integer.numberOfLeadingZeros(xored);
+    int result = (1 << (significantBit + 1)) - 1;
+    return result;
 }

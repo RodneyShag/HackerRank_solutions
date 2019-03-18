@@ -2,27 +2,21 @@
 //     Github: github.com/RodneyShag
 // HackerRank: hackerrank.com/RodneyShag
 
-import java.util.Scanner;
+static int[] countingSort(int[] givenArray) {
+    /* Save into buckets */
+    final int maxValue = 100;
+    int[] bucket = new int[maxValue];
+    for (int value : givenArray) {
+        bucket[value]++;
+    }
 
-public class Solution {
-    public static void main(String[] args) {
-        final int maxValue = 100;
-        Scanner scan = new Scanner(System.in);
-        int n = scan.nextInt();
-        int[] array = new int[maxValue];
-        
-        /* Save into buckets */
-        for (int i = 0; i < n; i++) {
-            int num = scan.nextInt();
-            array[num]++;
-        }
-        scan.close();
-        
-        /* Print all elements, sorted */
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[i]; j++) {
-                System.out.print(i + " ");
-            }
+    /* Create sorted array */
+    int[] sortedArray = new int[givenArray.length];
+    int position = 0;
+    for (int i = 0; i < bucket.length; i++) {
+        for (int j = 0 ; j < bucket[i]; j++) {
+            sortedArray[position++] = i;
         }
     }
+    return sortedArray;
 }

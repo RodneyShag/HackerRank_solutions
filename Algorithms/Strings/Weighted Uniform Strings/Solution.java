@@ -32,7 +32,7 @@ public class Solution {
             if (curr != prev) {
                 weight = 0;
             } 
-            weight +=  curr - 'a' + 1;
+            weight += curr - 'a' + 1;
             weights.add(weight);
             prev = curr;
         }

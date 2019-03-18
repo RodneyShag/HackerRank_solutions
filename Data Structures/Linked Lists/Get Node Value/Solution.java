@@ -14,12 +14,12 @@
 
 //  Time Complexity: O(n)
 // Space Complexity: O(1)
-int GetNode(Node head, int k) {
-    Node curr   = head;
-    Node runner = head;
+int getNode(SinglyLinkedListNode head, int positionFromTail) {
+    SinglyLinkedListNode curr   = head;
+    SinglyLinkedListNode runner = head;
     
     /* Move runner into the list by k elements */
-    for (int i = 0; i < k; i++) {
+    for (int i = 0; i < positionFromTail; i++) {
         runner = runner.next;
     }
     

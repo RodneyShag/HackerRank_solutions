@@ -3,16 +3,18 @@
 // HackerRank: hackerrank.com/RodneyShag
 
 /*
-  Node is defined as 
-  class Node {
-     int data;
-     Node next;
-  }
-*/
+ * For your reference:
+ *
+ * SinglyLinkedListNode {
+ *     int data;
+ *     SinglyLinkedListNode next;
+ * }
+ *
+ */
 
-void ReversePrint(Node n) {
+void reversePrint(SinglyLinkedListNode n) {
     if (n != null) {
-        ReversePrint(n.next);
+        reversePrint(n.next);
         System.out.println(n.data);
     }
 }

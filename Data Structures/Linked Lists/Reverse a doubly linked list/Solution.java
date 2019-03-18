@@ -3,23 +3,25 @@
 // HackerRank: hackerrank.com/RodneyShag
 
 /*
-  Node is defined as 
-  class Node {
-     int data;
-     Node next;
-     Node prev;
-  }
-*/
+ * For your reference:
+ *
+ * DoublyLinkedListNode {
+ *     int data;
+ *     DoublyLinkedListNode next;
+ *     DoublyLinkedListNode prev;
+ * }
+ *
+ */
 
-//          Runtime: O(n)
+//  Time Complexity: O(n)
 // Space Complexity: O(1)
-Node Reverse(Node head) {
+DoublyLinkedListNode reverse(DoublyLinkedListNode head) {
     if (head == null && head.next == null) {
         return head;
     }
-    Node prev = null;
-    Node curr = head;
-    Node next = null;
+    DoublyLinkedListNode prev = null;
+    DoublyLinkedListNode curr = head;
+    DoublyLinkedListNode next = null;
     while (curr != null) {
         next = curr.next;
         curr.next = prev;

@@ -3,20 +3,21 @@
 // HackerRank: hackerrank.com/RodneyShag
 
 /*
-  Node is defined as 
-  class Node {
-     int data;
-     Node next;
-     Node prev;
-  }
-*/
+ * For your reference:
+ *
+ * DoublyLinkedListNode {
+ *     int data;
+ *     DoublyLinkedListNode next;
+ *     DoublyLinkedListNode prev;
+ * }
+ *
+ */
 
 //  Time Complexity: O(n)
 // Space Complexity: O(1)
-Node SortedInsert(Node head, int data) {
+static DoublyLinkedListNode sortedInsert(DoublyLinkedListNode head, int data) {
     /* Create Node to insert */
-    Node newNode = new Node();
-    newNode.data = data;
+    DoublyLinkedListNode newNode = new DoublyLinkedListNode(data);
     
     if (head == null) { // insert in empty list
         return newNode;
@@ -26,8 +27,8 @@ Node SortedInsert(Node head, int data) {
         return newNode;
     } else {        
         /* Walk list with 2 pointers (code is cleaner than using just 1 pointer) */
-        Node n1 = null;
-        Node n2 = head;
+        DoublyLinkedListNode n1 = null;
+        DoublyLinkedListNode n2 = head;
         while (n2 != null && n2.data < data) {
             n1 = n2;
             n2 = n2.next;
@@ -45,4 +46,3 @@ Node SortedInsert(Node head, int data) {
         return head;
     }
 }
-

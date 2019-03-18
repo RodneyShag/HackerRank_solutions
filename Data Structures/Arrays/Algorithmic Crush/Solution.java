@@ -2,10 +2,6 @@
 //     Github: github.com/RodneyShag
 // HackerRank: hackerrank.com/RodneyShag
 
-//     Author: Rodney Shaghoulian
-//     Github: github.com/RodneyShag
-// HackerRank: hackerrank.com/RodneyShag
-
 import java.util.Scanner;
 
 // For each of the "m" operations, we do not want to take O(n) time to process it. That's because our runtime will end up being O(nm). To get a O(n+m) runtime, we have to process each operation in O(1) time. To do so, we keep track of just the endpoints, which are just 2 numbers, instead of the O(n) numbers in between the endpoints. This is the main idea to decrease our runtime.
@@ -46,4 +42,3 @@ public class Solution {
 }
 
 // Regarding the exact values of "a" and "b", it's a little tricky since "a" and "b" are 1-indexed but our array is 0-indexed. So we want to subtract 1 from both "a" and "b". However, for "b" we re-add 1 because we want to change values from "a" to "b" inclusive as stated in the problem, so we want the end of the interval to be 1 to the right of "b" which is why we re-add the 1.
-

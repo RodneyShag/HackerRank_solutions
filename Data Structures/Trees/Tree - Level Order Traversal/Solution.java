@@ -10,6 +10,9 @@
     }
 */
 
+//  Time Complexity: O(n)
+// Space Complexity: O(n)
+
 void LevelOrder(Node root) {
     ArrayDeque<Node> deque = new ArrayDeque<>(); // use deque as a queue
     if (root != null) {
