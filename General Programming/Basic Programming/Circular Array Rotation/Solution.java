@@ -34,15 +34,12 @@ public class Solution {
     }
     
     /* Reverses array from "start" to "end" inclusive */
-    private static void reverse(int [] array, int start, int end) {
-        if (array == null || start < 0 || start >= array.length || 
-            end < 0 || end >= array.length || start >= end) {
+    private static void reverse(int[] array, int start, int end) {
+        if (array == null || start < 0 || start >= array.length || end < 0 || end >= array.length) {
             return;
         }
-        int mid = (start + end) / 2;
-        for (int i = start; i <= mid; i++) {
-            int offset = i - start;
-            swap(array, start + offset, end - offset);
+        while (start < end) {
+            swap(array, start++, end--);
         }
     }
     
