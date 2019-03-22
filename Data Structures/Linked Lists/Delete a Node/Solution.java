@@ -1,6 +1,5 @@
-//     Author: Rodney Shaghoulian
-//     Github: github.com/RodneyShag
-// HackerRank: hackerrank.com/RodneyShag
+// Author: Rodney Shaghoulian
+// Github: github.com/RodneyShag
 
 /*
   Delete Node at a given position in a linked list 

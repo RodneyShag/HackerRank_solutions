@@ -1,6 +1,5 @@
-//     Author: Rodney Shaghoulian
-//     Github: github.com/RodneyShag
-// HackerRank: hackerrank.com/RodneyShag
+// Author: Rodney Shaghoulian
+// Github: github.com/RodneyShag
 
 public class Solution {
     public static void main(String[] args) {

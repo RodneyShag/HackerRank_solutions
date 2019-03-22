@@ -1,6 +1,5 @@
-//     Author: Rodney Shaghoulian
-//     Github: github.com/RodneyShag
-// HackerRank: hackerrank.com/RodneyShag
+// Author: Rodney Shaghoulian
+// Github: github.com/RodneyShag
 
 static String caesarCipher(String str, int k) {
     StringBuilder sb = new StringBuilder();

@@ -1,6 +1,5 @@
-//     Author: Rodney Shaghoulian
-//     Github: github.com/RodneyShag
-// HackerRank: hackerrank.com/RodneyShag
+// Author: Rodney Shaghoulian
+// Github: github.com/RodneyShag
 
 public static boolean canWin(int leap, int[] game) {
     return isSolvable(leap, game, 0);

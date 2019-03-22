@@ -1,6 +1,5 @@
-//     Author: Rodney Shaghoulian
-//     Github: github.com/RodneyShag
-// HackerRank: hackerrank.com/RodneyShag
+// Author: Rodney Shaghoulian
+// Github: github.com/RodneyShag
 
 /*
   Print elements of a linked list on console 

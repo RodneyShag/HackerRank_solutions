@@ -1,6 +1,5 @@
---     Author: Rodney Shaghoulian
---     Github: github.com/RodneyShag
--- HackerRank: hackerrank.com/RodneyShag
+-- Author: Rodney Shaghoulian
+-- Github: github.com/RodneyShag
 
 SELECT name FROM Employee
 WHERE salary > 2000 AND months < 10

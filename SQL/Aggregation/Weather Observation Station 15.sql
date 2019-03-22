@@ -1,6 +1,5 @@
---     Author: Rodney Shaghoulian
---     Github: github.com/RodneyShag
--- HackerRank: hackerrank.com/RodneyShag
+-- Author: Rodney Shaghoulian
+-- Github: github.com/RodneyShag
 
 SELECT ROUND(LONG_W, 4)
 FROM STATION
