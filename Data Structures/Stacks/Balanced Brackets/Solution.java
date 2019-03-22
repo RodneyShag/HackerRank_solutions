@@ -8,6 +8,9 @@ import java.util.ArrayDeque;
 
 // ArrayDeque is "likely to be faster than Stack when used as a stack" - Java documentation
 
+//  Time Complexity: O(n)
+// Space Complexity: O(n)
+
 public class Solution {
     public static void main(String[] args) {
         /* Create HashMap to match opening brackets with closing brackets */

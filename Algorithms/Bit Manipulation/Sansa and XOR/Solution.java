@@ -27,6 +27,7 @@ import java.util.Scanner;
 // in the original array to get our final answer.
 
 //  Time Complexity: O(n)
+// Space Complexity: O(1)
 
 static int sansaXor(int[] array) {
     if (array.length % 2 == 0) { // Case 1

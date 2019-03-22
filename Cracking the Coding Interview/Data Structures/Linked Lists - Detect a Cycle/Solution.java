@@ -2,8 +2,13 @@
 //     Github: github.com/RodneyShag
 // HackerRank: hackerrank.com/RodneyShag
 
+// Algorithm
+//
+// 1. Create a pointer that moves 1 step  at a time: 'slow'
+// 2. Create a pointer that moves 2 steps at a time: 'fast'
+// 3. If the Linked List has a cycle, 'slow' and 'fast' will collide.
+
 /*
-Detect a cycle in a linked list. Note that the head pointer may be 'null' if the list is empty.
 
 A Node is defined as: 
     class Node {
@@ -30,3 +35,6 @@ boolean hasCycle(Node head) {
     }
     return false;
 }
+
+//  Time Complexity: O(n)
+// Space Complexity: O(1)

@@ -4,6 +4,9 @@
 
 // ArrayDeque is "likely to be faster than Stack when used as a stack" - Java documentation
 
+//  Time Complexity: O(n)
+// Space Complexity: O(n)
+
 /* Create HashMap to match opening brackets with closing brackets */
 static String isBalanced(String expression) {
     HashMap<Character, Character> map = new HashMap<>();

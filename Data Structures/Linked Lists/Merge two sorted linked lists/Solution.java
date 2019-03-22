@@ -3,35 +3,24 @@
 // HackerRank: hackerrank.com/RodneyShag
 
 /*
-  Node is defined as 
-  class Node {
+  class SinglyLinkedListNode {
      int data;
-     Node next;
+     SinglyLinkedListNode next;
   }
 */
 
 //  Time Complexity: O(n + m)
 // Space Complexity: O(1)
   
-Node MergeLists(Node currA, Node currB) {
+static SinglyLinkedListNode mergeLists(SinglyLinkedListNode currA, SinglyLinkedListNode currB) {
     if (currA == null) {
         return currB;
     } else if (currB == null) {
         return currA;
     }
     
-    /* Find new head pointer */
-    Node head = null;
-    if (currA.data < currB.data) {
-        head = currA;
-        currA = currA.next;
-    } else {
-        head = currB;
-        currB = currB.next;
-    }
-    
-    /* Build rest of list */
-    Node n = head;
+    SinglyLinkedListNode result = new SinglyLinkedListNode(0); // dummy/placeholder ListNode
+    SinglyLinkedListNode n = result;
     while (currA != null && currB != null) {
         if (currA.data < currB.data) {
             n.next = currA;
@@ -50,5 +39,5 @@ Node MergeLists(Node currA, Node currB) {
         n.next = currA;
     }
 
-    return head;
+    return result.next;
 }

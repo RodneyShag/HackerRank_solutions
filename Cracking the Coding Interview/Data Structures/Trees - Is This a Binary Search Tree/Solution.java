@@ -2,7 +2,7 @@
 //     Github: github.com/RodneyShag
 // HackerRank: hackerrank.com/RodneyShag
 
-/* Hidden stub code will pass a root argument to the function below. 
+/* 
 
 The Node class is defined as follows:
     class Node {
