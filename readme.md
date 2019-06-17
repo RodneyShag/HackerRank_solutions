@@ -267,12 +267,12 @@ SQL solutions are coded using MySQL
 
 # Implementation
 
-|  Subdomain  |                                                Challenge                                               | Difficulty |                                                                           Solution                                                                           |
-|:-----------:|:------------------------------------------------------------------------------------------------------:|:----------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| Brute Force | [Pangrams](https://www.hackerrank.com/challenges/pangrams)                                             |     20     | [Solution.java](https://github.com/RodneyShag/HackerRank_solutions/blob/master/Implementation/Brute%20Force/Pangrams/Solution.java)                        |
-| Brute Force | [Strings: Making Anagrams](https://www.hackerrank.com/challenges/ctci-making-anagrams)                 |     25     | [Solution.java](https://github.com/RodneyShag/HackerRank_solutions/blob/master/Implementation/Brute%20Force/Strings%20-%20Making%20Anagrams/Solution.java) |
-| Brute Force | [Making Anagrams](https://www.hackerrank.com/challenges/making-anagrams)                               |     30     | [Solution.java](https://github.com/RodneyShag/HackerRank_solutions/blob/master/Implementation/Brute%20Force/Making%20Anagrams/Solution.java)               |
-| Brute Force | [Modified Kaprekar Numbers](https://www.hackerrank.com/challenges/kaprekar-numbers)                    |     30     | [Solution.java](https://github.com/RodneyShag/HackerRank_solutions/blob/master/Implementation/Brute%20Force/Modified%20Kaprekar%20Numbers/Solution.java)   |
+|  Subdomain  |                                                Challenge                                               | Points |                                                                         Solution                                                                           |
+|:-----------:|:------------------------------------------------------------------------------------------------------:|:------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| Brute Force | [Pangrams](https://www.hackerrank.com/challenges/pangrams)                                             |   20   | [Solution.java](https://github.com/RodneyShag/HackerRank_solutions/blob/master/Implementation/Brute%20Force/Pangrams/Solution.java)                        |
+| Brute Force | [Strings: Making Anagrams](https://www.hackerrank.com/challenges/ctci-making-anagrams)                 |   25   | [Solution.java](https://github.com/RodneyShag/HackerRank_solutions/blob/master/Implementation/Brute%20Force/Strings%20-%20Making%20Anagrams/Solution.java) |
+| Brute Force | [Making Anagrams](https://www.hackerrank.com/challenges/making-anagrams)                               |   30   | [Solution.java](https://github.com/RodneyShag/HackerRank_solutions/blob/master/Implementation/Brute%20Force/Making%20Anagrams/Solution.java)               |
+| Brute Force | [Modified Kaprekar Numbers](https://www.hackerrank.com/challenges/kaprekar-numbers)                    |   30   | [Solution.java](https://github.com/RodneyShag/HackerRank_solutions/blob/master/Implementation/Brute%20Force/Modified%20Kaprekar%20Numbers/Solution.java)   |
 
 
 # Java
