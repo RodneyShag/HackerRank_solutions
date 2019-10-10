@@ -1,4 +1,3 @@
-// Author: Rodney Shaghoulian
 // Github: github.com/RodneyShag
 
 static String caesarCipher(String str, int k) {

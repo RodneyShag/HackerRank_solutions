@@ -1,4 +1,3 @@
-// Author: Rodney Shaghoulian
 // Github: github.com/RodneyShag
 
 static int[] countingSort(int[] givenArray) {

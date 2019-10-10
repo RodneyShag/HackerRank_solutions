@@ -1,4 +1,3 @@
-// Author: Rodney Shaghoulian
 // Github: github.com/RodneyShag
 
 static long repeatedString(String str, long n) {

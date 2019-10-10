@@ -1,4 +1,3 @@
-// Author: Rodney Shaghoulian
 // Github: github.com/RodneyShag
 
 /* Node is defined as :

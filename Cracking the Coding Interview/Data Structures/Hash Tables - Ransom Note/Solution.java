@@ -1,4 +1,3 @@
-// Author: Rodney Shaghoulian
 // Github: github.com/RodneyShag
 
 /* Determines if ransom letter can be made from magazine */

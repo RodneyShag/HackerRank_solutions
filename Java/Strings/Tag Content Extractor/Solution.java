@@ -1,6 +1,4 @@
-//     Author: Rodney Shaghoulian
-//     Github: github.com/RodneyShag
-// 
+// Github: github.com/RodneyShag
 
 import java.util.Scanner;
 import java.util.regex.Matcher;

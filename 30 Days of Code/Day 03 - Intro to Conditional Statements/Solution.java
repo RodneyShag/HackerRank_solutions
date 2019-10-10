@@ -1,5 +1,4 @@
 
-// Author: Rodney Shaghoulian
 // Github: github.com/RodneyShag
 
 import java.util.Scanner;

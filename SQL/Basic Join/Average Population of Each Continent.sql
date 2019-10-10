@@ -1,4 +1,3 @@
--- Author: Rodney Shaghoulian
 -- Github: github.com/RodneyShag
 
 SELECT COUNTRY.CONTINENT, FLOOR(AVG(CITY.POPULATION))

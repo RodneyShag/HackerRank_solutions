@@ -1,4 +1,3 @@
-// Author: Rodney Shaghoulian
 // Github: github.com/RodneyShag
 
 /* Here are 3 ways to convert an int to a String. Use any of the 3 methods. */

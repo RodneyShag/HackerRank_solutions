@@ -1,4 +1,3 @@
--- Author: Rodney Shaghoulian
 -- Github: github.com/RodneyShag
 
 SELECT IF (S.Marks < 70, 'NULL', S.Name), G.Grade, S.Marks

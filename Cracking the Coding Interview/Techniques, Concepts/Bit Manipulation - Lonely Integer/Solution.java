@@ -1,4 +1,3 @@
-// Author: Rodney Shaghoulian
 // Github: github.com/RodneyShag
 
 // O(n) runtime. O(1) space. Uses XOR. Keep in mind:
