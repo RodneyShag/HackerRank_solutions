@@ -1,4 +1,4 @@
-// Github: github.com/RodneyShag
+// github.com/RodneyShag
 
 static long repeatedString(String str, long n) {
     /* Found out # of times 'a' appears in our String */

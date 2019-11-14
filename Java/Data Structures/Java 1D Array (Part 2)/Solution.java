@@ -1,4 +1,4 @@
-// Github: github.com/RodneyShag
+// github.com/RodneyShag
 
 public static boolean canWin(int leap, int[] game) {
 	if (game == null) {

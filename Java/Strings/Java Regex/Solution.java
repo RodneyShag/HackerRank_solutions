@@ -1,4 +1,4 @@
-// Github: github.com/RodneyShag
+// github.com/RodneyShag
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

@@ -1,4 +1,4 @@
-// Github: github.com/RodneyShag
+// github.com/RodneyShag
 
 // To maximize A xor B, we want A and B to differ as much as possible at every bit index.
 // We first find the most significant bit that we can force to differ by looking at L and R.

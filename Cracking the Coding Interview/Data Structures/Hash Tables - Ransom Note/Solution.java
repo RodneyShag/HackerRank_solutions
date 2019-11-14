@@ -1,4 +1,4 @@
-// Github: github.com/RodneyShag
+// github.com/RodneyShag
 
 /* Determines if ransom letter can be made from magazine */
 public static void checkMagazine(String[] magazine, String[] ransom) {

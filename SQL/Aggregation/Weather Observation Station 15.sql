@@ -1,4 +1,4 @@
--- Github: github.com/RodneyShag
+-- github.com/RodneyShag
 
 SELECT ROUND(LONG_W, 4)
 FROM STATION

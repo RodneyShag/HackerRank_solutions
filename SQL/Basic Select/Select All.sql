@@ -1,3 +1,3 @@
--- Github: github.com/RodneyShag
+-- github.com/RodneyShag
 
 SELECT * FROM CITY;

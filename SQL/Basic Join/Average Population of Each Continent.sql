@@ -1,4 +1,4 @@
--- Github: github.com/RodneyShag
+-- github.com/RodneyShag
 
 SELECT COUNTRY.CONTINENT, FLOOR(AVG(CITY.POPULATION))
 FROM CITY INNER JOIN COUNTRY

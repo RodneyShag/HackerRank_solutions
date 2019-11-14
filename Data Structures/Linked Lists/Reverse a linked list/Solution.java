@@ -1,4 +1,4 @@
-// Github: github.com/RodneyShag
+// github.com/RodneyShag
 
 // Iterative Solution using 3 pointers
 //  Time Complexity: O(n)

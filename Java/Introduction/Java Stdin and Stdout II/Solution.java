@@ -1,5 +1,4 @@
-// Github: github.com/RodneyShag
-// Github: github.com/RodneyShag
+// github.com/RodneyShag
 
 import java.util.Scanner;
 

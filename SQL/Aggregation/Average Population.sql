@@ -1,4 +1,4 @@
--- Github: github.com/RodneyShag
+-- github.com/RodneyShag
 
 SELECT FLOOR(AVG(POPULATION))
 FROM CITY;

@@ -1,4 +1,4 @@
--- Github: github.com/RodneyShag
+-- github.com/RodneyShag
 
 SELECT 
     TRUNCATE(SUM(LAT_N), 4)

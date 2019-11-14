@@ -1,4 +1,4 @@
-// Github: github.com/RodneyShag
+// github.com/RodneyShag
 
 /*
   Insert Node at the beginning of a linked list 

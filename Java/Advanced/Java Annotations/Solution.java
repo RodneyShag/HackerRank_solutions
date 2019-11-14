@@ -1,4 +1,4 @@
-// Github: github.com/RodneyShag
+// github.com/RodneyShag
 
 import java.lang.annotation.*;
 import java.lang.reflect.*;

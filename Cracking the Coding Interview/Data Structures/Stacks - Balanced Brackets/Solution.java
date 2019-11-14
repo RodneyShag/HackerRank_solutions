@@ -1,4 +1,4 @@
-// Github: github.com/RodneyShag
+// github.com/RodneyShag
 
 // ArrayDeque is "likely to be faster than Stack when used as a stack" - Java documentation
 

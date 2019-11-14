@@ -1,4 +1,4 @@
-// Github: github.com/RodneyShag
+// github.com/RodneyShag
 
 static int[] countingSort(int[] givenArray) {
     /* Save into buckets */

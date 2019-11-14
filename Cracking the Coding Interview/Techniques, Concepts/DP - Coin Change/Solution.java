@@ -1,4 +1,4 @@
-// Github: github.com/RodneyShag
+// github.com/RodneyShag
 
 // Use a HashMap as a cache to speed up runtime 
 // Must use "long" instead of "int" to avoid integer overflow

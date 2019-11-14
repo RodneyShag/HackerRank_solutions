@@ -1,4 +1,4 @@
-// Github: github.com/RodneyShag
+// github.com/RodneyShag
 
 // O(n) runtime. O(1) space. Uses XOR. Keep in mind:
 //   1) x ^ x = 0

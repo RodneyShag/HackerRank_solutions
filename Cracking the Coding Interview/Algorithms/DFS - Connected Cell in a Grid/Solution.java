@@ -1,4 +1,4 @@
-// Github: github.com/RodneyShag
+// github.com/RodneyShag
 
 // Tips:
 // - Instead of using a "boolean[][] visited" array, we alter our original grid

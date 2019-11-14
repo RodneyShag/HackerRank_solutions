@@ -1,4 +1,4 @@
-// Github: github.com/RodneyShag
+// github.com/RodneyShag
 
 static String caesarCipher(String str, int k) {
     StringBuilder sb = new StringBuilder();

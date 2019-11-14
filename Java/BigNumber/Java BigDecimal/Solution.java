@@ -1,4 +1,4 @@
-// Github: github.com/RodneyShag
+// github.com/RodneyShag
 
 import java.math.BigDecimal;
 import java.util.*;

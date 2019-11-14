@@ -1,4 +1,4 @@
-// Github: github.com/RodneyShag
+// github.com/RodneyShag
 
 import java.io.*;
 import java.lang.reflect.*;
