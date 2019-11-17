@@ -44,3 +44,5 @@ static DoublyLinkedListNode sortedInsert(DoublyLinkedListNode head, int data) {
         return head;
     }
 }
+
+// Discuss on HackerRank: https://www.hackerrank.com/challenges/insert-a-node-into-a-sorted-doubly-linked-list/forum/comments/255744

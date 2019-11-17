@@ -28,3 +28,5 @@ public class Solution {
         return array;
     }
 }
+
+// Discuss on HackerRank: https://www.hackerrank.com/challenges/ctci-making-anagrams/forum/comments/246741

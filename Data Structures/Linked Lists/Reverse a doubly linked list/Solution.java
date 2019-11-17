@@ -29,3 +29,5 @@ DoublyLinkedListNode reverse(DoublyLinkedListNode head) {
     }
     return prev;
 }
+
+// Discuss on HackerRank: https://www.hackerrank.com/challenges/reverse-a-doubly-linked-list/forum/comments/255770

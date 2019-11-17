@@ -16,3 +16,5 @@ void reversePrint(SinglyLinkedListNode n) {
         System.out.println(n.data);
     }
 }
+
+// Discuss on HackerRank: https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list-in-reverse/forum/comments/255098

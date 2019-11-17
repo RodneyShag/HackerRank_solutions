@@ -51,3 +51,5 @@ public class test {
         System.out.println(max);
     }
 }
+
+// Discuss on HackerRank: https://www.hackerrank.com/challenges/java-dequeue/forum/comments/254876

@@ -40,3 +40,5 @@ static int sansaXor(int[] array) {
        return result;
     }
 }
+
+// Discuss on HackerRank: https://www.hackerrank.com/challenges/sansa-and-xor/forum/comments/284330

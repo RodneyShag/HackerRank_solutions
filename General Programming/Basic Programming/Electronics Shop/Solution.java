@@ -54,3 +54,5 @@ public class Solution {
         System.out.println(moneySpent);
     }
 }
+
+// Discuss on HackerRank: https://www.hackerrank.com/challenges/electronics-shop/forum/comments/360045

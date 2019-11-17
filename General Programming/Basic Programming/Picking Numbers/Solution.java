@@ -27,3 +27,5 @@ public static int pickingNumbers(List<Integer> array) {
     }
     return max;
 }
+
+// Discuss on HackerRank: https://www.hackerrank.com/challenges/picking-numbers/forum/comments/362225

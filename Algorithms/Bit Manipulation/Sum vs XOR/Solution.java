@@ -27,3 +27,5 @@ private static int numZeroes(long n) {
     }
     return count;
 }
+
+// Discuss on HackerRank: https://www.hackerrank.com/challenges/sum-vs-xor/forum/comments/284300

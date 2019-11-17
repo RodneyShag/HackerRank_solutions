@@ -58,3 +58,5 @@ class Trie {
         return curr.size;
     }
 }
+
+// Discuss on HackerRank: https://www.hackerrank.com/challenges/ctci-contacts/forum/comments/246767

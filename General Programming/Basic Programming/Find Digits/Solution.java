@@ -12,3 +12,5 @@ static int findDigits(int num) {
     }
     return count;
 }
+
+// Discuss on HackerRank: https://www.hackerrank.com/challenges/find-digits/forum/comments/265470

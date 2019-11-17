@@ -18,3 +18,5 @@ static int[] countingSort(int[] givenArray) {
     }
     return sortedArray;
 }
+
+// Discuss on HackerRank: https://www.hackerrank.com/challenges/countingsort2/forum/comments/272970

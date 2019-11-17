@@ -22,3 +22,5 @@ private static boolean isSolvable(int leap, int[] game, int i) {
         || isSolvable(leap, game, i + 1)
         || isSolvable(leap, game, i - 1);
 }
+
+// Discuss on HackerRank: https://www.hackerrank.com/challenges/java-1d-array/forum/comments/253767

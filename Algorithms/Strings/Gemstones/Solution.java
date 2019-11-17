@@ -16,3 +16,5 @@ static int gemstones(String[] array) {
     
     return bitset.cardinality();
 }
+
+// Discuss on HackerRank: https://www.hackerrank.com/challenges/gem-stones/forum/comments/284428

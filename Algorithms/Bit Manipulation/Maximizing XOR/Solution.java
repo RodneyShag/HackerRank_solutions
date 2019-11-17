@@ -20,3 +20,5 @@ static int maximizingXor(int L, int R) {
     int result = (1 << (significantBit + 1)) - 1;
     return result;
 }
+
+// Discuss on HackerRank: https://www.hackerrank.com/challenges/maximizing-xor/forum/comments/284317

@@ -32,3 +32,5 @@ String superReducedString(String str) {
         return sb.toString();
     }
 }
+
+// Discuss on HackerRank: https://www.hackerrank.com/challenges/reduced-string/forum/comments/263979

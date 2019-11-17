@@ -40,3 +40,5 @@ public class Solution {
 }
 
 // Regarding the exact values of "a" and "b", it's a little tricky since "a" and "b" are 1-indexed but our array is 0-indexed. So we want to subtract 1 from both "a" and "b". However, for "b" we re-add 1 because we want to change values from "a" to "b" inclusive as stated in the problem, so we want the end of the interval to be 1 to the right of "b" which is why we re-add the 1.
+
+// Discuss on HackerRank: https://www.hackerrank.com/challenges/crush/forum/comments/255515

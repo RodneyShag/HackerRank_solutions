@@ -24,3 +24,5 @@ static int minimumDistances(int[] array) {
     }
     return minDistance == Integer.MAX_VALUE ? -1 : minDistance;
 }
+
+// Discuss on HackerRank: https://www.hackerrank.com/challenges/minimum-distances/forum/comments/360084

@@ -22,3 +22,5 @@ static long repeatedString(String str, long n) {
     
     return totalAs;
 }
+
+// Discuss on HackerRank: https://www.hackerrank.com/challenges/repeated-string/forum/comments/266320

@@ -17,3 +17,5 @@ private static char encrypt(char ch, int K) {
     char base = Character.isLowerCase(ch) ? 'a' : 'A';
     return (char) ((ch - base + K) % 26 + base);
 }
+
+// Discuss on HackerRank: https://www.hackerrank.com/challenges/caesar-cipher-1/forum/comments/269393
