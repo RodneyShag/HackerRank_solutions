@@ -12,7 +12,7 @@ public class Solution {
         }
         a = a.toLowerCase();
         b = b.toLowerCase();
-        HashMap<Character, Integer> map = new HashMap<>();
+        HashMap<Character, Integer> map = new HashMap();
         
         /* Fill HashMap with 1st String */
         for (int i = 0; i < a.length(); i++) {

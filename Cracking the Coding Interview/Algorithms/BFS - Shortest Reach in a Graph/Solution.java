@@ -50,7 +50,7 @@ public class Solution {
         if (start == null) {
             return;
         }
-        ArrayDeque<Node> deque = new ArrayDeque<>(); // use deque as a queue
+        ArrayDeque<Node> deque = new ArrayDeque(); // use deque as a queue
         start.distance = 0;
         deque.add(start);
         while (!deque.isEmpty()) {
@@ -73,7 +73,7 @@ public class Solution {
         public Node (int id) {
             this.id   = id;
             distance  = -1;
-            neighbors = new HashSet<>();
+            neighbors = new HashSet();
         }
         
         public void addNeighbor(Node neighbor) {

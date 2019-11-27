@@ -12,7 +12,7 @@ import java.util.HashMap;
 
 // Complete the minimumDistances function below.
 static int minimumDistances(int[] array) {
-    HashMap<Integer, Integer> map = new HashMap<>();
+    HashMap<Integer, Integer> map = new HashMap();
     int minDistance = Integer.MAX_VALUE;
     for (int i = 0; i < array.length; i++) {
         if (map.containsKey(array[i])) {

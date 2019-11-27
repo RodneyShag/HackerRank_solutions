@@ -22,7 +22,7 @@ public class Solution {
     }
     
     private static HashSet<Integer> getWeights(String str) {
-        HashSet<Integer> weights = new HashSet<>();
+        HashSet<Integer> weights = new HashSet();
         int weight = 0;
         char prev = ' '; // so it doesn't match 1st character
         for (int i = 0; i < str.length(); i++) {

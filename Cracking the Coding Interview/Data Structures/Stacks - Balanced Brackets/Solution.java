@@ -7,7 +7,7 @@
 
 /* Create HashMap to match opening brackets with closing brackets */
 static String isBalanced(String expression) {
-    HashMap<Character, Character> map = new HashMap<>();
+    HashMap<Character, Character> map = new HashMap();
     map.put('(', ')');
     map.put('[', ']');
     map.put('{', '}');
@@ -18,7 +18,7 @@ private static boolean isBalanced(String expression, HashMap<Character, Characte
     if ((expression.length() % 2) != 0) {
         return false; // odd length Strings are not balanced
     }        
-    ArrayDeque<Character> deque = new ArrayDeque<>(); // use deque as a stack
+    ArrayDeque<Character> deque = new ArrayDeque(); // use deque as a stack
     for (int i = 0; i < expression.length(); i++) {
         Character ch = expression.charAt(i);
         if (map.containsKey(ch)) {

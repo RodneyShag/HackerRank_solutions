@@ -8,7 +8,7 @@ public class Solution {
         /* Create and fill Linked List of Integers */
         Scanner scan = new Scanner(System.in);
         int N = scan.nextInt();
-        LinkedList<Integer> list = new LinkedList<>();
+        LinkedList<Integer> list = new LinkedList();
         for (int i = 0; i < N; i++) {
             int value = scan.nextInt();
             list.add(value);

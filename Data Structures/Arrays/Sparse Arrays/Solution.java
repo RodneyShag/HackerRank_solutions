@@ -10,7 +10,7 @@ public class Solution {
         scan.nextLine(); // gets rid of pesky newline
         
         /* Create and fill HashMap */
-        HashMap<String, Integer> map  = new HashMap<>();
+        HashMap<String, Integer> map  = new HashMap();
         for (int i = 0; i < N; i++) {
             String str = scan.nextLine();
             map.merge(str, 1, Integer::sum);

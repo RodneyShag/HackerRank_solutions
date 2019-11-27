@@ -8,7 +8,7 @@ class Solution {
         /* Save input as entries in a HashMap */
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
-        HashMap<String, Integer> map = new HashMap<>();
+        HashMap<String, Integer> map = new HashMap();
         for (int i = 0; i < n; i++) {
             String name = scan.next();
             int phone   = scan.nextInt();

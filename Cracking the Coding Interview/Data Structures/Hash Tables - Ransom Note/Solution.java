@@ -16,7 +16,7 @@ public static void checkMagazine(String[] magazine, String[] ransom) {
 
 /* Creates and returns a HashMap out of an array of Strings */
 private static HashMap<String, Integer> makeMap(String[] words) {
-    HashMap<String, Integer> map = new HashMap<>();
+    HashMap<String, Integer> map = new HashMap();
     for (int i = 0; i < words.length; i++) {
         map.merge(words[i], 1, Integer::sum);
     }

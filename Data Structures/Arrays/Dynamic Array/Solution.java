@@ -11,7 +11,7 @@ public class Solution {
         int lastAns = 0;
         
         /* Create 2-D ArrayList */
-        ArrayList<ArrayList<Integer>> lists = new ArrayList<>();
+        ArrayList<ArrayList<Integer>> lists = new ArrayList();
         for (int i = 0; i < N; i++) {
             lists.add(new ArrayList<Integer>());
         }

@@ -52,7 +52,7 @@ public class Solution {
             ob.checkPrime(n1,n2,n3);
             ob.checkPrime(n1,n2,n3,n4,n5);
             Method[] methods = Prime.class.getDeclaredMethods();
-            Set<String> set = new HashSet<>();
+            Set<String> set = new HashSet();
             boolean overload = false;
             for (int i = 0; i < methods.length; i++) {
                 if (set.contains(methods[i].getName())) {

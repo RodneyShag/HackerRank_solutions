@@ -9,7 +9,7 @@ import java.util.ArrayDeque;
 class Solution {
     public static void main(String[] args) {
         /* Create HashMap to match opening brackets with closing brackets */
-        HashMap<Character, Character> map = new HashMap<>();
+        HashMap<Character, Character> map = new HashMap();
         map.put('(', ')');
         map.put('[', ']');
         map.put('{', '}');
@@ -27,7 +27,7 @@ class Solution {
         if ((expression.length() % 2) != 0) {
             return false; // odd length Strings are not balanced
         }        
-        ArrayDeque<Character> deque = new ArrayDeque<>(); // use deque as a stack
+        ArrayDeque<Character> deque = new ArrayDeque(); // use deque as a stack
         for (int i = 0; i < expression.length(); i++) {
             Character ch = expression.charAt(i);
             if (map.containsKey(ch)) {

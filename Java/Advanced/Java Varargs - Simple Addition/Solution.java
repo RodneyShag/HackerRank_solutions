@@ -39,7 +39,7 @@ public class Solution {
             ob.add(n1,n2,n3,n4,n5); 
             ob.add(n1,n2,n3,n4,n5,n6);
             Method[] methods = Add.class.getDeclaredMethods();
-            Set<String> set = new HashSet<>();
+            Set<String> set = new HashSet();
             boolean overload = false;
             for (int i = 0; i < methods.length; i++) {
                 if (set.contains(methods[i].getName())) {

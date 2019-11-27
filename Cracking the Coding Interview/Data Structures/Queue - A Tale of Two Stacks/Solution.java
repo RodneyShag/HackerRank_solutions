@@ -24,8 +24,8 @@ public class Solution {
     }
     
     public static class MyQueue<Integer> {
-        private Stack<Integer> stack1 = new Stack<>();
-        private Stack<Integer> stack2 = new Stack<>();
+        private Stack<Integer> stack1 = new Stack();
+        private Stack<Integer> stack2 = new Stack();
         
         public void enqueue(Integer num) {
             stack1.push(num);

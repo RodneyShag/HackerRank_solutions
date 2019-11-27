@@ -9,10 +9,10 @@ public class Solution {
         int n = scan.nextInt();
                 
         /* Save numbers in 2-D ArrayList */
-        ArrayList<ArrayList<Integer>> lists = new ArrayList<>();
+        ArrayList<ArrayList<Integer>> lists = new ArrayList();
         for (int row = 0; row < n; row++) {
             int d = scan.nextInt();
-            ArrayList<Integer> list = new ArrayList<>();
+            ArrayList<Integer> list = new ArrayList();
             for (int col = 0; col < d; col++) {
                 list.add(scan.nextInt());
             }

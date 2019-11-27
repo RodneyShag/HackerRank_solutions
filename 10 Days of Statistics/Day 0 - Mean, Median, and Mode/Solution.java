@@ -35,7 +35,7 @@ public class Solution {
         }
         
         /* Calculate Mode - if there's a tie, choose the smaller number */
-        HashMap<Integer, Integer> map = new HashMap<>();
+        HashMap<Integer, Integer> map = new HashMap();
         int maxOccurrences = 0;
         int mode = Integer.MAX_VALUE;
         for (int num : array) {

@@ -12,7 +12,7 @@ class Solution {
         /* Save input as entries in a HashMap */
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
-        HashMap<String, Integer> map = new HashMap<>();
+        HashMap<String, Integer> map = new HashMap();
         while (n-- > 0) {
             String name = br.readLine();
             int phone   = Integer.parseInt(br.readLine());

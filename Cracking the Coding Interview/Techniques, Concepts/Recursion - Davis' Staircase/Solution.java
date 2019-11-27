@@ -11,7 +11,7 @@ import java.util.HashMap;
 // Can alternatively be solved in O(1) space (per testcase) by using iteration instead of recursion
     
 public class Solution {
-    private static HashMap<Integer, Integer> cache = new HashMap<>();
+    private static HashMap<Integer, Integer> cache = new HashMap();
     
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

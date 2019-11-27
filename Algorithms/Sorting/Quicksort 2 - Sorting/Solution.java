@@ -31,8 +31,8 @@ public class Solution {
     /* Partition/Quicksort "Stable Sort" version using O(n) space */
     private static int partition(int[] array, int start, int end) {
         int pivotValue = array[start]; // not a great choice of pivot
-        ArrayList<Integer> leftList  = new ArrayList<>();
-        ArrayList<Integer> rightList = new ArrayList<>();
+        ArrayList<Integer> leftList  = new ArrayList();
+        ArrayList<Integer> rightList = new ArrayList();
 
         for (int i = start + 1 ; i <= end; i++) {
             if (array[i] < pivotValue) {

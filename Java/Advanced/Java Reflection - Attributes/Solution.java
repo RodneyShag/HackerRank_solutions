@@ -6,7 +6,7 @@ public class Solution {
         Method[] methods = student.getDeclaredMethods();
 
         /* Get names from Methods */
-        ArrayList<String> methodNames = new ArrayList<>();
+        ArrayList<String> methodNames = new ArrayList();
         for (Method method : methods) {
             methodNames.add(method.getName());
         }

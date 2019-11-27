@@ -23,7 +23,7 @@ public class Solution {
 
 /* Based loosely on tutorial video in this problem */
 class TrieNode {
-    private HashMap<Character, TrieNode> children = new HashMap<>();
+    private HashMap<Character, TrieNode> children = new HashMap();
     public int size = 0; // this was the main trick to decrease runtime to pass tests.
 
     public void putChildIfAbsent(char ch) {

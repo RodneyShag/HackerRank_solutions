@@ -10,7 +10,7 @@ public class Solution {
         int n = scan .nextInt();
         
         /* Count pairs */
-        HashSet<Integer> set = new HashSet<>();
+        HashSet<Integer> set = new HashSet();
         int pairs = 0;
         for (int i = 0; i < n; i++) {
             int cost = scan.nextInt();

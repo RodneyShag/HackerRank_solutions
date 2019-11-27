@@ -9,7 +9,7 @@ public class Solution {
         String str = scan.nextLine().toLowerCase();
         scan.close();
         
-        HashSet<Character> set = new HashSet<>();
+        HashSet<Character> set = new HashSet();
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
             if (Character.isLetter(ch)) {

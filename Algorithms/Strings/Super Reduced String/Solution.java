@@ -11,7 +11,7 @@ import java.util.Stack;
 
 String superReducedString(String str) {
     /* Iterate through String, creating final result in a Stack */
-    Stack<Character> stack = new Stack<>();
+    Stack<Character> stack = new Stack();
     for (int i = 0; i < str.length(); i++) {
         Character ch = str.charAt(i);
         if (!stack.isEmpty() && ch == stack.peek()) {

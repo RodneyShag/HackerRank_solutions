@@ -17,7 +17,7 @@ class Solution {
         if (root == null) {
             return;
         }
-        ArrayDeque<Node> deque = new ArrayDeque<>(); // use deque as a queue
+        ArrayDeque<Node> deque = new ArrayDeque(); // use deque as a queue
         deque.add(root);
         while (!deque.isEmpty()) {
             Node n = deque.removeFirst();

@@ -41,7 +41,7 @@ abstract class Tree {
 }
 
 class TreeNode extends Tree {
-    private ArrayList<Tree> children = new ArrayList<>();
+    private ArrayList<Tree> children = new ArrayList();
 
     public TreeNode(int value, Color color, int depth) {
         super(value, color, depth);
@@ -168,7 +168,7 @@ public class Solution {
             /* Edges are undirected: Add 1st direction */
             HashSet<Integer> uNeighbors = map.get(u);
             if (uNeighbors == null) {                
-                uNeighbors = new HashSet<>();
+                uNeighbors = new HashSet();
                 map.put(u, uNeighbors);
             }
             uNeighbors.add(v);
@@ -176,7 +176,7 @@ public class Solution {
             /* Edges are undirected: Add 2nd direction */
             HashSet<Integer> vNeighbors = map.get(v);
             if (vNeighbors == null) {
-                vNeighbors = new HashSet<>();
+                vNeighbors = new HashSet();
                 map.put(v, vNeighbors);
             }
             vNeighbors.add(u);

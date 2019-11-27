@@ -22,7 +22,7 @@ public class Solution {
     }
     
     public static void buyIceCream(int [] costs, int money) {
-        HashMap<Integer, Integer> map = new HashMap<>(); // key = cost, value = ice cream ID
+        HashMap<Integer, Integer> map = new HashMap(); // key = cost, value = ice cream ID
         for (int i = 0; i < costs.length; i++) {
             int icecreamID = i + 1;
             int cost       = costs[i];

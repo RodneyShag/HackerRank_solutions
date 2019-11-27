@@ -11,7 +11,7 @@ import java.util.Collections;
 
 public class Solution {
     private static PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder()); // keeps track of the SMALL numbers
-    private static PriorityQueue<Integer> minHeap = new PriorityQueue<>();                           // keeps track of the LARGE numbers
+    private static PriorityQueue<Integer> minHeap = new PriorityQueue();                           // keeps track of the LARGE numbers
     
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
