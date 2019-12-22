@@ -1,7 +1,6 @@
 -- github.com/RodneyShag
 
-SELECT salary * months AS earnings, COUNT(*)
+SELECT top 1 salary * months, COUNT(*)
 FROM Employee
-GROUP BY earnings
-ORDER BY earnings DESC
-LIMIT 1;
+GROUP BY salary * months
+ORDER BY salary * months DESC;
