@@ -15,7 +15,7 @@ public class Solution {
         final int maxValue = 100;
         
         /* Create HashMap with empty "buckets" to put Strings into */
-        HashMap<Integer, ArrayList<String>> map = new HashMap<>(maxValue);
+        HashMap<Integer, ArrayList<String>> map = new HashMap(maxValue);
         for (int i = 0; i < maxValue; i++) {
             map.put(i, new ArrayList<String>());
         }

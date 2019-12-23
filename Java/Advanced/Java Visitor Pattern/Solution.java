@@ -152,7 +152,7 @@ public class Solution {
         /* Save nodes and colors */
         values = new int[numNodes];
         colors = new Color[numNodes];
-        map = new HashMap<>(numNodes);
+        map = new HashMap(numNodes);
         for (int i = 0; i < numNodes; i++) {
             values[i] = scan.nextInt();
         }

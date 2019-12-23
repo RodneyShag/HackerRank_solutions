@@ -14,7 +14,7 @@ public class Solution {
         Scanner scan = new Scanner(System.in);
         int N = scan.nextInt();
         int K = scan.nextInt();
-        ArrayList<Integer> contest = new ArrayList<>(N);
+        ArrayList<Integer> contest = new ArrayList(N);
         int savedLuck = 0;
         for (int i = 0; i < N; i++) {
             int luck = scan.nextInt();
