@@ -7,7 +7,7 @@ public class Main{
       Iterator it=mylist.iterator();
       while(it.hasNext()){
          Object element = it.next();
-         if (element.equals("###"))
+         if (element instanceof String)
             break;
       }
       return it;
