@@ -10,14 +10,8 @@ public class Solution {
         int b = scan.nextInt();
         scan.close();
 
-        /* Calculate sum */
-        int sum = solveMeFirst(a, b);
-
+        int sum=a+b;
         /* Print output */
         System.out.println(sum);
-    }
-
-    static int solveMeFirst(int a, int b) {
-        return a + b;
     }
 }
