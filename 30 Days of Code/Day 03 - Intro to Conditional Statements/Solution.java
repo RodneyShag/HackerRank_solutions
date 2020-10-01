@@ -6,9 +6,8 @@ import java.util.Scanner;
 public class Solution {
     public static void main(String[] args) {
         /* Read input */
-        Scanner scan = new Scanner(System.in);
-        int n = scan.nextInt();
-        scan.close();
+        Scanner scn = new Scanner(System.in);
+        long n = scn.nextLong();
         
         /* Determine answer */
         String ans = "";
