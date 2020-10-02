@@ -1,14 +1,15 @@
-// github.com/RodneyShag
-
+import java.math.BigInteger;
 import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int size = scan.nextInt();
-        long sum = 0; // use long to prevent integer overflow
+        BigInteger sum=BigInteger.valueOf(0);
         for (int i = 0; i < size; i++) {
-            sum += scan.nextInt();
+            int temporay=scan.nextInt();
+            BigInteger temp=BigInteger.valueOf(temporay);
+            sum=sum.add(temp);
         }
         scan.close();
         System.out.println(sum);
