@@ -1,0 +1,50 @@
+
+/* 
+   Assing level to the nodes vertically
+   on moving toward left decrease level by -1
+   on moving toward right increase level by +1
+*/
+
+/* 
+   And if the level is unvisited put in a map
+   else check the left ans right subtree
+*/
+
+
+
+static class qObj {
+        Node node;
+        int level;
+        
+        qObj(Node n, int l) {
+            node = n;
+            level = l;
+        }
+    }
+    
+	public static void topView(Node root) {
+        Queue<qObj> q = new LinkedList<>();
+        q.add(new qObj(root, 1));
+        
+        Map<Integer, Integer> hm = new TreeMap<>();
+        
+        while(!q.isEmpty()) {
+            qObj popped = q.poll();
+            
+            if(!hm.containsKey(popped.level)) {
+                hm.put(popped.level, popped.node.data);
+            }
+            
+            if(popped.node.left != null) {
+                q.add(new qObj(popped.node.left, popped.level - 1));
+            }
+            
+            if(popped.node.right != null) {
+                q.add(new qObj(popped.node.right, popped.level + 1));
+            }
+        }
+        
+        for(Map.Entry<Integer, Integer> entry : hm.entrySet()) {
+            System.out.print(entry.getValue() + " ");
+        }
+    }
