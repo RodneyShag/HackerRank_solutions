@@ -13,7 +13,7 @@ import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 import java.time.LocalDate;
 
-class Result {
+class Solution {
 
     /*
      * Complete the 'findDay' function below.
@@ -48,7 +48,7 @@ public class Solution {
 
         int year = Integer.parseInt(firstMultipleInput[2]);
 
-        String res = Result.findDay(month, day, year);
+        String res = Solution.findDay(month, day, year);
 
         bufferedWriter.write(res);
         bufferedWriter.newLine();
