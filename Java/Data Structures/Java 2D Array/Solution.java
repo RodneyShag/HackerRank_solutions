@@ -15,7 +15,7 @@ public class Solution {
         
         System.out.println(maxHourglass(arr));
     }
-    
+ // Guthub merge   
     public static int maxHourglass(int [][] arr) {
         int max = Integer.MIN_VALUE;
         for (int row = 0; row < 4; row++) {
