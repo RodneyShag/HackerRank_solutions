@@ -13,7 +13,8 @@ public class Solution {
         } catch (InputMismatchException e) {
             System.out.println(e.getClass().getName());
         } catch (ArithmeticException e) {
-            System.out.println(e.getClass().getName() + ": / by zero");
+//             System.out.println(e.getClass().getName() + ": / by zero");
+            System.out.println(e.toString());
         }
     }
 }
